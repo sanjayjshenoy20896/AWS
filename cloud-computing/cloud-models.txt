@@ -1,0 +1,22 @@
+Cloud models
+They are three types of cloud service models
+1.) SAAS (Software as a Service);
+2.) PAAS (Platform as a Service);
+3.) IAAS (Infrastructure as a Service)
+
+
+1.) Software as a service - SAAS
+it gives you quick access to cloud based web applications
+Vendor controls the entire computational stack, which can be accessed by the browser
+eg: Google G Suite
+
+2.) Platform as a Service
+It is a platform that we can develop,test and organise different applications for your business.
+it simplefies the process of Software development.
+eg: Amazon Elastic Beanstalk
+
+3.) Infrastructure as a Service
+virtual provision of computational resources over the cloud.
+It can provide you the entire range of Infrastructure such as storage,servers network alongside maintainance and support
+eg: Amazon EC2 
+

@@ -1,0 +1,20 @@
+Cloud computing
+Gives you access to servers,storage,databases and broad set of applications required for the internet
+
+Amazon Web servers
+Offers reliable, scalable and inexpensive cloud services and gives you option as free to join as well as pay as you use. This is beneficial
+
+Why AWS?
+Locations -> They are spread over multiple regions across the world
+Automated backups -> They provide screenshots based backups in automated fashion
+Disaster recovery -> They provide service layer aggrements during Disaster recovery
+Flexibility and scalability -> scalability of servers and databases.
+Pay-as-you-go Pricing model -> Pay for the services as you use them
+Security -> They have various encryption and decryption strategy
+
+
+Benefits
+1.) Agility -> Allows us to innovate faster and focus on our valuable IT resources.
+2.) Elasticity -> We can provision the amount of services we actually need and we can instantly scale up and down based on need of the business. This prevents over-provisioning of resources.
+3.) Deploy global in minutes -> Easy deployment of resources in multiple physical Locations around the world. This helps in maintaining lower latency and less cost.
+4.) Pay as you go -> pay only for what you consume.
