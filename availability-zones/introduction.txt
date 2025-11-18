@@ -1,2 +1,18 @@
 AWS Shared Responsibility model
 
+The customer is Responsibile for the security "IN" the cloud.
+Customer data
+Platform, applications,identity and access management
+OS, network amd firewall configuration
+Client-side data encryption & Data Integrity Authentication
+Server-side encryption
+Network traffic protection 
+
+AWS is Responsibile for security "OF" the cloud.
+Software
+Compute
+Storage 
+Database
+Networking
+Hardware
+Regions,availablity zones and edge Locations
