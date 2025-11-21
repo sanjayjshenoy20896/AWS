@@ -18,3 +18,9 @@ Benefits
 2.) Elasticity -> We can provision the amount of services we actually need and we can instantly scale up and down based on need of the business. This prevents over-provisioning of resources.
 3.) Deploy global in minutes -> Easy deployment of resources in multiple physical Locations around the world. This helps in maintaining lower latency and less cost.
 4.) Pay as you go -> pay only for what you consume.
+
+
+
+AWS Free Tier:
+it allows people to create free tier account, where there are limits to use a service within the limits to have free account.
+Cost is very low to get started.
