@@ -2,7 +2,12 @@ Regions:
 It has the most extensive global footprint than any other cloud provider and adds more Locations faster than any other cloud service provider.
 Currently there are 26 geographical regions and many more are in the works.It maintains geographical regions in North America,South America,Europe and middle east
 
+AWS regions are physical regions that are present across the world.
+The group of this data centers are reffered to as Availability zones. 
+Each zone contains about 3 zones. 
+
 Availablity Zones:
+It consists of one or more data centers in a region with redundant power, networking and connectivity
 It gives customers the ability to add production applications , databases that are highly available ,scalable and fault tolerant by placing them in multiple data centers.
 It maintains 84 AZ across the world.
 Each zone can have multiple data centers and at full scale can be hundreds of servers.

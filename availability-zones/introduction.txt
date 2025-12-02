@@ -16,3 +16,25 @@ Database
 Networking
 Hardware
 Regions,availablity zones and edge Locations
+
+
+Customer Responsibility: (Security in the cloud)
+a.) Customer data
+b.) Client-side data encryption
+
+Customer / AWS Responsibility: (Varied Responsibility by service)
+a.) Server side encryption
+b.) Network traffic protection
+c.) Platform and application management
+d.) OS, Network and firewall
+
+AWS Responsibility: (Security of the Cloud)
+a.) Software for compute storage, database and networking
+b.) Hardware and global infrastructure
+
+
+
+
+
+
+

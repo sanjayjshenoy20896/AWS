@@ -20,3 +20,15 @@ virtual provision of computational resources over the cloud.
 It can provide you the entire range of Infrastructure such as storage,servers network alongside maintainance and support
 eg: Amazon EC2 
 
+Aws cloud models:
+
+A.) Cloud-based deployment:
+User has the fliexibility to migrate the existing resources to the cloud, design and build new applications within the cloud
+
+B.) On-premise development:
+Deploying resources in the premises using virtualisation and resource management tools does not provide many of the benefits of cloud computing.
+
+C.) Hybrid deployment:
+The cloud deployment and on-premise development work together. This is ideal for legacy application to remain in on premise for maintainance and regulatory purpose.
+
+
