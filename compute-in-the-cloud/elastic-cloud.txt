@@ -1,0 +1,119 @@
+Compute:
+Compute referes to processing power needed to run applications, manage data.
+
+In the cloud, The power to compute is available on-demand. User can access it without owning or maintaining physical hardware.
+
+Compute in the Cloud:
+It means creating virtual machines with cloud provider that run application and tasks over the internet.
+
+Elastic Cloud:(Compute as-a-service) (CaaS)
+It is highly flexible, cost effective and quick to provision server.
+Server can be created on-demand as well as terminated when not required.
+By the above logic, We can prevent under-provisioning or over-provisioning of servers.
+We only pay only instances that are running. 
+We do not pay for discontinued or terminated instances.
+
+Multi-tendancy:
+Sharing underlying hardware between virtual machines. Each VM is isolated from each other but can still share resources between them.
+
+Hypervisor:
+Software that creates and manages the virtual machines allowing to run multiple operating system on a single server by allocating physical resources like CPU and memory.
+
+EC2 configurations
+OS: Windows/linux
+Internal business applications
+webapps
+databases
+Third-party software
+
+
+Scaling: Increasing the capacity of the server provisioning:
+
+Vertical scaling: It is basically increasing the CPU ,memory and other resources on a unit server.
+
+Horizontal scaling: It is basically increasing the number of servers with same capacity to increase compute power.
+
+Benefits:
+
+a.) Pay only for running and active instances of the server.
+b.) Scale up or down the instances based on the need
+c.) Stop instance once the workload is completed
+d.) Provison and launch an instance of server within minutes.
+
+How EC2 Basically work:
+1.) Launch:
+
+Start by selecting an OS image from Amazon machine image (AMI) Which determines the type of the Operating system
+Choose an instance type which determines the CPU power, memory and network architecture.
+
+2.) Connect:
+
+Users or administrators can connect using SSH for Linux instances or Remote Desktop Protocol (RDP) for Windows instances. Alternatively, AWS services like AWS Systems Manager offer a secure and simplified method for accessing instances.
+
+3.) Use:
+
+begin using the instance to run commands, install software, add resources,storage, files and other application data.
+
+EC2 instance types:
+They are basically 5 instance types based on CPU,memory and networking capacity.
+1.) General purpose:
+
+It provides a balance mix of computational resources.
+Use case:
+Web services, code repositories and application whose workload is uncertain.
+
+2.) Compute optimised:
+
+Compute optimized instances are ideal for compute-intensive tasks.
+Use case:
+Gaming servers, high performance computing (HPC), machine learning, and scientific modeling.
+
+3.) Memory optimised:
+
+Memory optimized instances are used for memory-intensive tasks.
+Use Caes:
+Processing large datasets, data analytics, and databases. They provide fast performance for memory-heavy workloads.
+
+
+4.) accelerated optimised:
+Accelerated computing instances use hardware accelerators, like graphics processing units (GPUs), to efficiently handle tasks, such as floating-point calculations, graphics processing, and machine learning.
+
+
+5.) Storage optimised:
+Storage optimized instances are designed for workloads that require high performance for locally stored data, such as large databases, data warehousing, and I/O-intensive applications.
+
+How to provision AWS resources:
+
+Interacting with aws
+There are 3 ways of interacting with AWS resources:
+1.) AWS CLI (AWS cloudshell)
+The AWS Management Console is a web interface for managing AWS services, offering quick access to services, search functionality, and simplified workflows. With the mobile app, you monitor resources, view alarms, and check billing, supporting multiple logged-in identities at once.
+a.) Set up test enviornments
+b.) View bills
+c.) View Monitoring
+d.) Work with non-technical resources
+
+2.) AWS Console
+With the AWS CLI, you manage multiple AWS services directly from the command line across Windows, macOS, and Linux. You can automate tasks through scripts, such as launching EC2 instances.
+
+make api calls using terminals on the machine
+
+3.) AWS SDK:
+
+
+The AWS SDK simplifies integrating AWS services into your applications by providing APIs for various programming languages. AWS offers documentation and sample code for languages like C++, Java, and .NET to help you get started.
+
+
+Compute and shared Responsibility:
+An unmanaged service like Amazon EC2 requires you to perform all of the necessary security configuration and management tasks.
+When you deploy an EC2 instance, you are responsible for configuring security, managing the guest operating system (OS), applying updates, and setting up firewalls (security groups).
+
+Amazon Machine image:
+An unmanaged service like Amazon EC2 requires you to perform all of the necessary security configuration and management tasks. When you deploy an EC2 instance, you are responsible for configuring security, managing the guest operating system (OS), applying updates, and setting up firewalls (security groups). You will learn more about managed and unmanaged services later.
+
+There are 3 ways to have images in AMI
+1.) Create a customised image
+2.) Use available machine images from AWS AMI
+3.) Purchase form AWS marketplace
+
+
