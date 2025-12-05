@@ -1,0 +1,65 @@
+Serverless computing:
+You cannot see or access the underlying architecture.
+
+Managed Services:
+AWS handle infrastructure, patching, backups, and scaling, reducing your operational load for higher cost & less control.
+
+unmanaged Services:
+give you full control, customization, and responsibility for everything from OS to security, demanding more in-house expertise but offering flexibility and lower base cost.
+
+
+Responsibility for managed Services and unmanaged Services
+
+Managed Services
+
+Customer responsibility: 
+    Customer data, 
+    Client side data encryption,
+    server side data encryption
+    network traffic protection
+
+Aws Responsibility:
+    Platform and application protection
+    OS, netwrok and firewall protection
+    s/w for compute storage,compute and networking
+    Hardware and global infrastructure
+
+
+Unmanaged Services:
+
+Customer responsibility: 
+    Customer data, 
+    Client side data encryption,
+    server side data encryption
+    network traffic protection
+    Platform and application protection
+    OS, netwrok and firewall protection
+
+Aws Responsibility:
+    s/w for compute storage,compute and networking
+    Hardware and global infrastructure
+
+
+Fully managed Services:
+
+Customer responsibility: 
+    Customer data, 
+    Client side data encryption
+
+Aws Responsibility:
+    server side data encryption
+    network traffic protection
+    Platform and application protection
+    OS, netwrok and firewall protection
+    s/w for compute storage,compute and networking
+    Hardware and global infrastructure
+
+Key points
+Unmanaged Services: Choose Deployment options and enviornment variables
+managed Services: Configure operating system, security patches, and network settings
+Fully managed: Focus only on writing and deploying code
+
+
+
+
+

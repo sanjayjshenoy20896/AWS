@@ -6,7 +6,7 @@ In the cloud, The power to compute is available on-demand. User can access it wi
 Compute in the Cloud:
 It means creating virtual machines with cloud provider that run application and tasks over the internet.
 
-Elastic Cloud:(Compute as-a-service) (CaaS)
+Elastic Cloud:(Compute as-a-service) (CaaS) (unmanaged service)
 It is highly flexible, cost effective and quick to provision server.
 Server can be created on-demand as well as terminated when not required.
 By the above logic, We can prevent under-provisioning or over-provisioning of servers.
