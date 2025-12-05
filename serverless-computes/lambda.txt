@@ -1,0 +1,21 @@
+AWS lambda: Function as a service
+
+A serverless compute service that runs on code without managing servers. 
+Lambda is a serverless compute service that runs code in response to events without the need to provision or manage servers.
+It automatically manages the underlying infrastructure based on scaling resources on volume of requests
+It allows several programming languages on the fly.
+You can optimize performance by configuring the appropriate memory size for your function.
+The only limitation is that maximum duration of the code can be 15 mins.
+
+How lambda works
+1.) Upload code to lambda
+2.) Set code to trigger from an event source
+3.) Run code based on trigger
+4.) Pay only for the compute time used
+
+Use cases: ideal for building responsive, event-driven applications across a wide range of industries. 
+1.) Real time image processing for a social media application
+2.) Real time event handling for an game
+3.) Personalised CDN for news aggregator
+
+
