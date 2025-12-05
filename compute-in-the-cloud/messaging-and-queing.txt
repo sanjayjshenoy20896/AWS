@@ -1,0 +1,28 @@
+Messaging and Queueing
+
+In modern application development, reliability and resilience are important.
+One effective way to achieve this is by adopting a service-oriented approach.
+
+Based on above distinction, there are 2 types of architectures namely
+1.) Monolithic architecture:
+Applications consist of multiple components that work together to transmit data, fulfill requests, and keep the application running smoothly.
+2.) Microservices architecture:
+Application components are loosely coupled, meaning that if one component fails, the others continue to function normally. The communication between components remains intact, and the failure of a single component does not impact the entire system. 
+This design promotes greater flexibility and reliability in the application.
+
+Messaging and Queueing Services:
+
+1.) EventBridge:
+EventBridge is a serverless service that helps connect different parts of an application using events, helping to build scalable, event-driven systems.
+EventBridge simplifies the process of receiving, filtering, transforming, and delivering events, so you can quickly build reliable applications.
+
+2.) Amazon Simple Queueing Service (Amazon SQS):
+It is a message queuing service that facilitates reliable communication between software components.
+an application places messages into a queue, and a user or service retrieves the message, processes it, and then removes it from the queue.
+
+3.) Amazon Simple Notification Service (Amazon SNS):
+Amazon SNS is a publish-subscribe service that publishers use to send messages to subscribers through SNS topics.
+
+
+
+
