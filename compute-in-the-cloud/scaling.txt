@@ -1,0 +1,94 @@
+Scalability and Elasticity
+
+Scalability:
+It refers to ability to add or remove resource to handle the demand of load on the servers.
+You can scale up by adding more power to existing machines, or you can scale out by adding more machines. 
+It focuses on long-term capacity planning to make sure that the system can grow and accommodate more users or workloads as needed.
+
+Elasticity:
+It refers to ability to automatically scale the resources up or down based on response in real time.
+Elasticity provides cost efficiency and optimal resource usage at any given moment.
+
+
+Vertical Scalling: Increasing or decreasing the instance to support the demand.
+
+Horizontal Scaling: Increasing the CPU and memory capacity of single instance.
+
+When to scale horizontally:
+Massive, unpredictable traffic spikes (e.g., e-commerce sales).
+Need for high availability and fault tolerance (no single point of failure).
+Applications designed for distribution (e.g., microservices, stateless web servers).
+
+When to scale Vertically
+Moderate, predictable growth.
+Workloads benefit from a single, powerful machine (e.g., certain databases, single-node tasks).
+Simplicity and lower initial cost are priorities, and code changes are difficult.
+
+EC2 autoscaling:
+Amazon EC2 Auto Scaling automatically adjusts the number of EC2 instances based on changes in application demand, providing better availability
+
+It offers two approaches.
+Dynamic scaling adjusts in real time to fluctuations in demand. 
+Predictive scaling preemptively schedules the right number of instances based on anticipated demand.
+
+We can maintain the desired amount of compute capacity by dynamically adjusting instances based on demand
+
+There are 2 settings to keep in mind
+1.) Minimum capacity:
+The least number of ec2 instances that are needed to keep the application running.
+This will stop the application from scaling below this threshold.
+It is also number of instances that launch immediately after you have created a auto scaling group.
+
+2.) Desired capacity:
+The ideal number of instances needed to handle the load of server.
+If it is not specified it defaults to minimum capacity.
+
+3.) Maximum capacity:
+The maximum capacity sets an upper limit on the number of instances that can be launched, preventing over-scaling and controlling costs.
+For example, you might configure the Auto Scaling group to scale out in response to increased demand.
+
+
+Load balancer:
+It helps in distributing the load across multiple instances of server to optimise performance, reliablity and high availability.
+A load balancer serves as the single point of contact for all incoming web traffic to an Auto Scaling group
+
+Elastic Load Balancer (ELB):
+ELB is designed to distribute network traffic to improve application scalability.
+The word elastic refers to its ability to scale up or down based on traffic, without adding to your hourly costs.
+ELB can manage both internal and external traffic to AWS. It offers different routing strategies to ensure efficient traffic management and thusly optimal application performance.
+
+Working:
+We can use it to manage the linking of the backend instances and the frontend instances
+Because it’s Regional, it's a single URL that each frontend instance uses to direct to the backend instances
+The ELB will then direct traffic to the backend instance that has the least outstanding requests.
+If the back-end needs to scale, it spins up a new instance. After that new instance is ready, it tells the ELB that it’s ready for traffic. And just like that, it gets to work.
+
+As the number of EC2 instances fluctuates in response to traffic demands, incoming requests are first directed to the load balancer
+
+In  this manner frontend need not know the url of each server. This helps in decoupling the architecture for each tier.
+
+Benefits:
+1.) Efficient traffic distribution: distributing traffic evenly across multiple instances
+2.) Automatic Scaling: Adjusting instances based on demand.
+3.) Simplified maintainance: decoupling the frontend and backend.
+
+Routing methods:
+To optimise methods, ELB uses 4 routung strategies namely
+1.) Round robin:
+Distribute traffic across multiple instances in a cyclic manner.
+
+2.) Least connections:
+Routes traffic to the server with the fewest active connections, maintaining a balanced load.
+
+3.) Ip hash:
+Use client ip address to route traffic to the same server.
+
+4.) Least response time:
+Directs traffic to the server with the fastest response time, minimizing latency.
+
+
+
+
+
+
+
