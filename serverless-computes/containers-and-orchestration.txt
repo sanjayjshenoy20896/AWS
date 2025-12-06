@@ -1,0 +1,59 @@
+Container:
+They package everything that application needs like code,runtime,configuration into single package that runs consistantly into a single portable unit.
+This helps in creating a consistant environment, isolating the aplication from underlying hardware.
+This helps in scaling and deploying the application conveniently.
+Containers are faster than Vms.
+
+Container Orchestration:
+it manages the lifecycle of containers like starting, stopping and running them across the cluster.
+
+Docker:
+Docker is a software platform for building, testing, and deploying applications quickly.
+
+There are 2 main container Orchestration in AWS
+1.) Amazon Elastic Container Servcie
+it is a scalable container Orchestration service for running and managing containers like docker containers.
+Launch types with ECs:
+a.) Amazon ECS With EC2:
+b.) Amazon ECS with fargate
+
+2.) Amazon Elastic Kubernetes Service
+It is a fully managed service for running Kubernetes on AWS. It simplifies deploying, managing, and scaling containerized applications using open-source Kubernetes, with ongoing support and updates from the broader community.
+Launch types with EKS:
+a.) Amazon EKS with EC2
+b.) Amazon EKS with fargate
+
+
+
+Elastic Container Resgistry (ECR):
+It is a fully manages service used to store,manage and deploy the docker images of our container.
+You can push, pull, and manage images in your Amazon ECR repositories using standard container tooling and command line interfaces (CLIs).
+Conatiners can run with 2 options namely
+1.) Amazon EC2 -> full control to manage the infrastructure
+2.) Amazon Fargate -> AWS manages the servers,
+
+
+Deployment with containers
+When developer builds an application , developers environemnt is different from staging pr production.
+This can make deployments fail and debugging a lot harder.
+
+Fargate:
+It is a serverless compute engine for containers. 
+It works with both Amazon ECS and Amazon EKS. 
+It is a container hosting platform, unlike Amazon ECS and Amazon EKS, which are both container orchestration services.
+
+Additional compute services:
+1.) Elastic Bean Stalk (EBS):
+Elastic Beanstalk is a fully managed service that streamlines the deployment, management, and scaling of web applications.
+Developers can upload their code, and Elastic Beanstalk automatically handles the provisioning of infrastructure, scaling, load balancing, and application health monitoring
+
+2.) AWS Batch:
+AWS Batch is a fully managed service that you can use to run batch computing workloads on AWS. 
+It automatically schedules, manages, and scales compute resources for batch jobs, optimizing resource allocation based on job requirements.
+
+3.) Lightsail
+Amazon Lightsail is a cloud service offering virtual private servers (VPSs), storage, databases, and networking at a predictable monthly price.
+
+4.) OutPosts
+AWS Outposts is a fully managed hybrid cloud solution that extends AWS infrastructure and services to on-premises data centers. 
+
