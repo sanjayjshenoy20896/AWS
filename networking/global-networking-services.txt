@@ -1,0 +1,27 @@
+Edge networking services
+Secure and speedy netwroking for user-facing application data.
+Edge networking is the process of bringing information storage and computing abilities closer to the devices that produce that information and the users who consume it.
+
+Domain Naming systems:
+DNS resolution is the process of translating a domain name to an IP address.
+
+
+Amazon Route 53
+It is a DNS that provides a reliable and cost-effective way to route end users to internet applications.
+It connects user requests to infrastructure running in AWS, such as Amazon EC2 instances and load balancers.
+It also has the ability to manage the doamin name of servers.
+You can register new domain names directly in Route 53. 
+You can also transfer DNS records for existing domain names managed by other domain registrars.
+This makes it possible for you to manage all of your domain names within a single location.
+
+Amazon CloudFront
+CloudFront is a content delivery network (CDN) service that delivers your content with faster loading times, cost savings, and reliability.
+
+
+It is used for 3 main contributions:
+1.) Streaming video service
+2.) Ecommerce webiste
+3.) Mobile
+
+AWS Global accelerator:
+it is a service that uses the AWS global network to improve application availability, performance, and security.
