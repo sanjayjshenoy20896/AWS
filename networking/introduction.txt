@@ -1,0 +1,75 @@
+Networking
+It referes to interconnecting devices that exchange data and resources.
+
+Amazon VPC: used to establish boundaries within the AWS resources.
+It lets you provision a isloated section of crowd that lets you where you can launch AWS resources in a virtual network.
+Benefits of a VPC:
+1.) Increased security
+2.) Full control over resource placement and connectivity
+3.) Spend less time setting up, managing and validating your network in on-premise.
+Subnet:
+It is used organise our resources and can be made publicaly accessible or private accessible.
+Customer facing applications can be publicaly accessible. (Have access to internet)
+database or transactional resource can be privately accessible. (Do not have access to the internet)
+
+Amazon Direct Connect
+lets you establish a completely private, dedicated fiber connection from your data center to AWS.
+It ensures both security and consistent high performance.
+You work with a Direct Connect partner in your area to establish this connection because, like my magic doorway, Direct Connect provides a physical line that connects your network to your Amazon VPC.
+
+a.) Direct Connect bypasses the internet and provides a consistent, low-latency network experience. 
+b.) Large scale data migration or transfer.
+c.) Hybrid cloud architecture
+You can use Direct Connect to link your AWS and on-premises networks to build applications that span environments without compromising performance.
+
+
+Internet gateway:
+It is a connection between the VPC and internet.
+
+Virtual Private Gateways -> allowed protected internet traffic to enter into vpc. 
+is the component in the AWS Cloud that makes it possible for you to connect this protected traffic to enter the VPC. With a VPN connection, your data travels privately and safely, hidden from others using the same route.
+
+What if you have a VPC that includes only private resources? The following example shows how a virtual private gateway works. You can think of the internet as the road between your home and the coffee shop. It is open and accessible to anyone. You want a way to protect the traffic you send on the internet from the public, internet service providers, and others who might be trying to track or intercept it. This is where a virtual private network (VPN) connection comes in.
+
+VPN creates a connection that is more like a secure tunnel through the internet. Using encryption, it hides and protects everything you send and receive from outside eyes
+
+With a private gatway, one can establish a VPN connection between a private netork and VPC such as on-premise network and on-premise data center.
+
+Virtual Private Network:
+it encrypts your internet traffic,helping to protect anyone from trying to intercept it
+
+
+Additional Gateway services:
+AWS Transient Gateway:
+AWS Transit Gateway is used to connect your Amazon VPCs and on-premises networks through a central hub.
+cloud infrastructure expands globally, inter-Region peering connects transit gateways together using the AWS Global Infrastructure.
+
+Network Address translation:
+A NAT gateway is a NAT service.
+You can use a NAT gateway so that instances in a private subnet can connect to services outside your VPC but external services can't initiate a connection with those instances.
+
+Amazon API gateway:
+The Amazon API Gateway is an AWS service for creating, publishing, maintaining, monitoring, and securing APIs at any scale.
+
+Security Group is statefull -> It keeps track of all the active connections.
+Network control list are stateless -> each inbound and outbound traffic is evaluated 
+
+How network packets flow from instance A to instance B:
+Alright, let's start with a couple instances, and we wanna send a packet from instance A to instance B in a different subnet, same VPC, different subnets. So, instance A sends the packet. Now, the first thing that happens is that packet meets the boundary of the security group of instance A. By default, all outbound traffic is allowed from a security group. So, you can walk right by the doorman and leave. Cool. Right. The packet made it past the security group of instance A.
+
+Now, it has to leave the subnet boundary. At the boundary, the packet must now make it through passport control, the network ACL. The network ACL doesn't care about what the security group allowed. It has its own list of who can pass and who can't. If the traffic address is allowed, you can keep going on your journey, which it is. It's left Instance A and Subnet 1 entirely, so now it must go through to Subnet 2, where it's checked by Subnet 2's incoming Network ACL and through the security group of Instance B. Once through those, Instance B can receive and process the request.
+
+Security Groups and network access control lists
+
+Network traffic packet:
+When a customer requests data from an application hosted in the AWS Cloud, this request is sent as a packet. A packet is a unit of data sent over the internet or a network.
+
+Network ACL:
+A network ACL is a virtual firewall that controls inbound and outbound traffic at the subnet level.
+
+Network ACLs perform stateless packet filtering. They remember nothing and check packets that cross the subnet border each way: inbound and outbound.
+
+Security Groups: (Stateful packet filtering)
+Control inbound and outbound traffic at the resource level
+They keep track of the network packets. This helps in decision making
+

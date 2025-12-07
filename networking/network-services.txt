@@ -1,0 +1,29 @@
+
+AWS Client VPN:
+It is a networking service you can use to connect your remote workers and on-premises networks to the cloud.
+It can be scalled up and down based on user demand
+
+Benefits:
+It provides advanced authentication, remote access. 
+It is elastic and fully managed
+
+Use Case:
+It can be used to quickly scale remote-worker access.
+
+Secure connection to other sites:
+It used to establish on-premise netwroks like data centers or branch offices and thwir resources to the VPC.
+
+Aws Site to Site VPN:
+It creates a secure connection between your data center or branch offices and your AWS Cloud resources.
+Benefits: Site-to-Site VPN provides high availability, secure and private sessions, and accelerates applications.
+Use cases: It can be used for application migration and secure communication between remote locations.
+
+Securly connect resources with other VPC
+AWS PrivateLink:
+is a highly available, scalable technology that you can use to privately connect your VPC to services and resources as if they were in your VPC.
+It allow communication with AWS services or resources from your private subnets.
+
+Benefits: AWS PrivateLink helps you secure your traffic and connect with simplified management rules.
+
+Use case: It is used for connecting your clients in your VPC to resources, other VPCs, and endpoints.
+
