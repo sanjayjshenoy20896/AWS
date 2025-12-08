@@ -25,3 +25,8 @@ It is used for 3 main contributions:
 
 AWS Global accelerator:
 it is a service that uses the AWS global network to improve application availability, performance, and security.
+Use cases:
+Global Gaming company
+Financial Service application
+
+AWS Global architecture:

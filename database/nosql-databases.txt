@@ -1,0 +1,51 @@
+Non-relational databases:
+NoSQL databases build a structure for the data that they contain using key-value pairs instead. With key-value pairs, data is organized into items identified by unique keys.
+
+Each key has one or more associated attributes, or values, that represent various characteristics of the data. You can think of a key as a word entry in a dictionary, and the value as its associated definition. Not every item in the table has to have the same attributes, and you can add or remove attributes at any time.
+
+Amazon Dynamo Db:
+fully managed NoSQL database service that provides fast and predictable performance for both document and key-value data structures
+It's a powerful and incredibly fast database option for use cases that require a flexible schema, and is ideal for applications that require high performance and seamless scaling.
+
+Use case:
+gaming platforms, financial service applications, and mobile applications with global user bases.
+
+Benefits:
+1.) Scalability with provisioned capacity
+2.) High performance
+3.) High availability
+4.) Data encryption
+
+Amazon Documnet db (Mongo db compatibility)
+It is a fully managed service designed to handle semistructured data, which is information that doesn't conform to rigid relational schemas. 
+
+Use cases:
+Some examples of practical use cases for Amazon DocumentDB are content management systems, catalog and inventory management, and user profile and personalization systems.
+
+Benefits:
+1.) Mongodb compatibility
+2.) performance and Scalability
+3.) increased read throuput
+
+AWS backup:
+AWS Backup streamlines data protection across various AWS resources and on-premises deployments by providing a single dashboard for monitoring and managing backups.
+AWS Backup centralizes and automates data protection processes, improving consistency and reducing administrative overhead. It offers flexible scheduling options, encryption capabilities, and cross-Region backup support for enhanced disaster recovery.
+
+Use cases:
+Some examples of practical use cases for AWS Backup are centralized disaster recovery, consistent backup policies for compliance requirements, and consolidating multiple backup processes through a single interface.
+
+Benefits:
+Centralised backups
+Cross-region backups
+Streamlined regulatory compliance
+
+Amazon Neptune (Graph db)
+Neptune is a fully managed, purpose-built graph database service that manages highly connected data sets, like those used in social networking applications.
+It excels at understanding complex relationships that are difficult to identify in traditional relational databases like user connections, friend networks, and interaction patterns
+
+Use case:
+Some examples of practical use cases for Amazon Neptune are social network user connection mapping, fraud detection systems, and search and recommendation systems.
+
+Benefits:
+1.) Complex relationships
+2.) High performance and Scalability

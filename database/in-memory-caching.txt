@@ -1,0 +1,16 @@
+In-memory caches:
+high-speed storage layer that temporarily stores frequently accessed data in a computer's main memory, or RAM. Retrieving data from RAM provides extremely fast processing and retrieval speeds, often hundreds or thousands of times faster than traditional disk-based storage systems.
+
+Amazon elasti cache
+fully managed in-memory caching service that was built to help reduce the complexity of administering in-memory caching systems. 
+
+Use cases:
+session data management, database query enhancement, and gaming leaderboards.
+
+Benefits:
+1.) high performance for Redis,Valkey or memcached instances
+2.) High availability
+3.) Replication across multiple availability zones
+4.) Data encryption
+
+

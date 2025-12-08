@@ -1,0 +1,6 @@
+AWS shared responsibility model:
+Based on ownership of data mgmnt. there are 3 types
+1.) Managed Databases
+2.) Unmanaged Databases
+3.) Fully Managed Databases
+

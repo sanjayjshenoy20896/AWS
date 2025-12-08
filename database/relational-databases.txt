@@ -1,0 +1,49 @@
+Relational Databases:(RDMS)
+It use a rigid schema that organizes collections of data into tables with rows and columns, where relationships exist between different tables
+
+Main way to access information from RDMS is by Structured query language (SQL).
+SQL runs on a variety of dbs like
+1.) MySQL
+2.) PostgreSQL
+4.) Microsoft SQL servers
+
+It offers fully managed database servers that remove the burden of database administration while maintaining high availability and security.
+It supports following dbs
+1.) MySQL, 
+2.) PostgreSQL
+3.) Oracle
+
+Amazon Relational database services (RDS)
+It managed relational database service that handles routine database tasks such as backups, patching, and hardware provisioning.
+Amazon RDS supports multiple database instance class types that optimize for memory, performance, or input/output (I/O).
+
+Benefits
+1.) Multi-AZ deployment and automated backups, 
+2.) manually create backups using DB snapshots
+3.) Amazon RDS offers security features including network isolation, encryption in transit, and encryption at rest.
+4.) Horizontal or vertical scaling is possible
+
+Supported engines:
+Amazon Aurora, MySQL, PostgreSQL, Microsoft SQL Server, MariaDB, and Oracle Database.
+
+Use cases:
+web applications, enterprise workloads, and product inventories for e-commerce platforms.
+
+
+Amazon Aurora:
+Aurora is a managed relational database designed to help reduce unnecessary I/O operations. 
+
+Supported engines:
+MySQL and PostgreSQL
+
+Use cases:
+Some examples of practical use cases for Aurora are gaming applications, media and content management, and real-time analytics.
+
+Benefits
+1.) High availability
+2.) Automated storage and backup management
+3.) Advanced replication and fault tolerance
+
+
+
+
