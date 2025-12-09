@@ -1,0 +1,39 @@
+Amazon Elastic File Storage:(Amazon EFS)
+Amazon EFS is a fully managed, scalable file storage service for use with AWS cloud services and on-premises resources.
+It operates using the Linux Network File System (NFS) protocol, and automatically scales to petabytes as you add or remove files without disrupting applications.
+
+Benefits:
+a.) Multiple insances accessing the data In EFS at the same time.
+b.) Automatic scaling
+c.) it comes with pre-configured lifecycle policies that help keep your cloud data cost-optimized.
+d.) EFS automatically moves data between storage classes based on access patterns, but you have the option to customize the lifecycle policies to fit your storage needs. 
+it's a true file system for Linux
+e.) EFS is not AZ-limited, you can connect storage to EC2 instances throughout the region or even from other regions
+
+Storage Classes:
+1.) Standard: (EFS Standard and EFS Standard-Infrequent Access (Standard-IA) storage classes)
+classes offer Multi-AZ resilience and the highest levels of durability and availability.
+They have a higher cost associated with them due to higher availability and durability.
+
+2.) One Zone storage: (The EFS One Zone and EFS One Zone-Infrequent Access (EFS One Zone-IA))
+provide additional savings by saving your data in a single Availability Zone.
+By using just one Availability Zone, you can reduce your storage costs when compared to the Standard EFS storage classes.
+
+3.) Archival Data Storage
+The EFS Archive storage class is cost-optimized for data that is accessed only a few times a year or less and that does not need the sub-millisecond latencies of EFS Standard.
+storage price up to 50% lower compared to EFS Infrequent Access, providing a more cost-optimized experience for cold, rarely-accessed data.
+
+
+Amazon EFS data lifescycle:
+storage costs by automatically moving data between storage classes based on usage patterns.
+You can create lifecycle policies that determine when and how files transition between different storage tiers.
+These automated policies help ensure your data resides in the most cost-effective storage class without manual intervention.
+
+Data transitions:
+a.) Transition to IA
+This policy instructs lifecycle management when to move files into the Infrequent Access storage, which is cost-optimized for data that is accessed only a few times each quarter. 
+Post 30 days , they are transitioned to 1A.
+
+b.) Transition to Archive
+his policy instructs lifecycle management when to move files into the Archive storage class, which is cost-optimized for data that is accessed only a few times each year or less.
+Post 90 days, they are transitioned into Archival

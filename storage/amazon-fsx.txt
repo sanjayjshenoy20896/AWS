@@ -1,0 +1,44 @@
+Amazon FSx:
+it convenient and cost effective to launch, run, and scale feature-rich, high-performance file systems in the cloud.
+It supports a wide range of workloads with its reliability, security, scalability, and broad set of capabilities.
+Compared to Amazon EFS, which focuses on the Network File System (NFS) compatibility, Amazon FSx supports multiple filesystem protocols, including Windows File Server, Lustre, OpenZFS, and NetAPP ONTAP.
+Amazon FSx is built on the latest AWS compute, networking, and disk technologies to provide high performance and lower total cost of ownership (TCO).
+As a fully managed service, it handles hardware provisioning, patching, and backups.
+
+Benefits:
+1.) File system integration:
+supports industry-standard file system protocols, allowing convenient integration with your existing applications, workflows, and development tools.
+
+2.) Managed infrastructure:
+reduces the complexity of managing infrastructure while delivering the features and capabilities of traditional file systems.
+
+3.) Scalable Storage:
+Amazon FSx adjusts resources dynamically, eliminating the need for complex capacity planning and manual infrastructure management.
+
+4.) Cost effective:
+Amazon FSx has a pricing model and automated tiering options that optimize costs by charging only for used storage and moving infrequently accessed data to lower-cost tiers.
+
+File systems:
+1.) Amazon FSx for Windows File Server
+Use cases:
+Reduce SQL Server deployment cost.
+Accelerate hybrid workloads.
+Streamline virtual desktops and streaming.
+
+2.) Amazon FSx for NetApp ONTAP
+Amazon FSx for NetApp ONTAP provides fully managed shared storage in the AWS Cloud with the popular data access and management capabilities of ONTAP.
+Use cases:
+Modernize your data management.
+Streamline business continuity.
+
+3.) Amazon FSx for OpenZFS
+Amazon FSx for OpenZFS provides fully managed shared file storage built on the OpenZFS file system and accessible through the NFS protocol 
+
+4.) Amazon FSx for Lustre
+Use case:
+Accelerate machine learning (ML).
+Enable high performance computing (HPC).
+Big data analytics
+
+
+
