@@ -1,0 +1,19 @@
+AWS Storage Gateway:
+Storage Gateway is a hybrid cloud storage service that makes it possible to seamlessly integrate on-premises environments with AWS Cloud storage.
+You can use it to extend your local storage to the cloud while maintaining low-latency access to frequently used data.
+
+Benefits:
+1.) Seamless data integration
+2.) Improved data management
+3.) Local caching
+4.) Cost optimization
+
+There are basically 3 types of storage gateway
+1.) S3 Storage gateway
+it is ideal for storing files directly in Amazon S3. Even better, you can access these files from any AWS application or service.
+2.) Volume gateway
+it creates block storage volumes locally.
+ The key benefit is that files are automatically backed up to AWS as Amazon EBS snapshots.
+3.) Tape gateway
+super useful for businesses still using physical tape backups. 
+It provides that seamless migration of tape data into the cloud.

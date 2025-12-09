@@ -1,0 +1,72 @@
+Block Storage:
+Usage case: Databases,Enterprise software and File system
+AWS allows 2 types of storage namely
+1.) Amazon Ec2 Instance Zone:
+It referes to the intsance data volumes attached to the EC2 instances.
+Depending on the type of ec2 instance, It comes withdefault storage capacity. This data is lost when the instance is stopped or terminated.
+It is best for temporary memory-based storage needs like buffers, caches, and scratch data.
+
+Benefits:
+a.) Automatic availabile storage:
+b.) Cost effective
+c.) High performance
+
+
+2.) Amazon Elastic Block Storage:
+It provides persistent block-level storage volumes for use with Amazon EC2 instances.
+EBS volumes act like external hard drives, offering consistent and low-latency performance for workloads like databases and file systems.
+EBS volumes can be conveniently backed up, resized, and attached to different EC2 instances. 
+After the volume has been created, it can be attached to an Amazon EC2 instance. Because EBS volumes are for data that needs to persist, it’s important to back up the data.
+
+Amazon EBS provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
+
+Use cases:
+database hosting, backup storage for applications, and rapid deployment of development environments using volume snapshots.
+
+Benefits:
+Data migration
+Instance type changes
+Disaster recovery
+Cost optimization
+performance tuning
+
+
+Amazon Elastic Block Storage (EBS) data lifecycle
+
+Amazon EBS Snapshots:
+They are point in time (specific time) copies of the EBS volumes.
+
+Incremental snapshots:
+Only creates a copy since the last copy of the snapshot date.
+This makes snapshot capture faster in EBS data volume.
+
+Benefits:
+1.) Data protection and recovery
+2.) Operational felexibility
+3.) Cost effective
+
+Amazon Data Lifecycle Manager
+1.) Schedule automatic screenshot capture
+2.) Set retention policy
+3.) Manage lifecycle snapshot
+4.) Apply consistent backup policy
+
+Process steps
+1.) Create an EBS snapshots policy
+Create an EBS snapshots policy using the Amazon EC2 console, API calls, AWS Command Line Interface (AWS CLI), SDKs, or AWS CloudFormation.
+
+2.) Select target resource type
+Choose either an EBS volume or an EC2 instance as the target for the snapshot.
+
+3.) Exclude volumes
+Narrow down the data to be included in the snapshot by choosing options to exclude either the root volume or data volumes.
+
+4.) Set custom schedules
+Automate the creation, retention, and deletion of EBS snapshots by setting up custom schedules.
+
+5.) Apply additional actions
+Before finalizing the policy, you can apply additional actions. These include configuring elements of the snapshots like tags, snapshot archiving, Amazon EBS fast snapshot restore, cross-Region copying, and cross-account sharing.
+
+
+
+
