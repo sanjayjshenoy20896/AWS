@@ -1,0 +1,106 @@
+Amazon Simple Storage Service (S3):
+object storage service that can store unlimited amounts of data in the AWS Cloud.
+It is well-suited for handling large amounts of unstructured data, such as documents, images, and videos.
+It offers 99.999999999 percent durability, meaning your data is highly protected against loss, and offers features like versioning, lifecycle management, and various storage classes to optimize costs.
+Amazon S3 stores files as objects in containers known as buckets, and each object can range in size from a few bytes to several terabytes
+
+
+S3 objects:
+It is a fundamental unit of storage in s3
+Each object typically includes the data itself, metadata, and a unique identifier, or key. 
+Objects can be of any file type, such as images, videos, documents, or application data, and can range in size from a few bytes to several terabytes.
+Each object is S3 is uniquely identified by using a key essentially a filename
+
+S3 buckets:
+It is a container for storing objects in Amazon S3. Buckets have a globally unique name across all of AWS
+Buckets serve as the basic unit for access control and can hold a virtually unlimited number of objects.
+When creating a bucket, you specify its name and the Region where it will reside.
+Buckets can be configured with various settings, including versioning, logging, and access permissions.
+
+Benefits:
+1.) Virtually unlimited storage
+Amazon S3 has no fixed storage limit, scaling automatically to accommodate any amount of data you need to store.
+Since you only pay for the storage you use, it's a cost-effective solution for growing data needs.
+2.) Object lifecycle management:
+Amazon S3 lifecycle policies automatically move objects between storage classes based on your defined rules, optimizing costs over time.
+You can set up automatic transitions and expirations to manage data throughout its entire lifecycle.
+3.) Broad range of usage:
+Amazon S3 is commonly used for content distribution, hosting static websites, and delivering media files. It's also a popular choice for things like application data storage, archiving, data lakes, and compliance-driven data retention.
+
+Security and Privacy management:
+Everything that is stored in S3 is private by default
+We must grant permissions to access  these resources
+We can make data to be availabile to everyone on the internet, we make objects and bucket as public or even granular access.
+
+Security Management features:
+1.) Bucket policies:
+resource-based policies that can only be attached to S3 buckets
+An S3 bucket policy specifies which actions are allowed or denied on the bucket, in addition to every object in that bucket.
+
+2.) Identify Based Bucket policies:
+Permissions that control what actions users, groups, or roles can perform on S3 resources are configured using identity-based policies.
+These policies attach directly to identities rather than to the S3 resources themselves.
+You can use these policies to specify which S3 buckets and objects users can access and what actions they can perform.
+
+3.) Data encryption:
+provides encryption capabilities to protect data both at rest and in transit.
+
+Encryption at rest secures data stored in S3 buckets, preventing unauthorized access to stored objects.
+Encryption in transit safeguards data traveling to and from Amazon S3, maintaining secure communication between clients and the service.
+
+Amazon S3 Storage Classes and S3 lifecycle:
+Storage classes in s3 is defined based on following criteria
+a.) Design for varried storage needs
+b.) Multiple storage classes for different needs
+
+a.) Amazon S3 standard:
+General purpose storage with faster storage needs and affordable storage costs.
+Use case:
+Storage website content
+
+b.) Amazon standard In-frequent access:
+It is storage class with quick storage but it lower case  and it is used when retrival is not frequent
+Rapid data retrival when needed.
+Use case:
+backups
+Secondary backups storage
+
+c.) Amazon Glacier
+1.) Amazon s3 glacier instant retrival:
+quick access similiar to S3 stnadard but with lower storage costs. 
+It offer saving oof upto 68% when compared to Standard In-frequent access.
+
+2.) Amazon s3 glacier flexible retrival:
+Slower data retrival takes longer to retrive data ranging from minutes to hours based on size.
+
+3.) Amazon S3 glacier deep retrival:
+This is the best option for storing data you hardly ever need, making it ideal for things like compliance archives or digital preservation. Data in this tier can be restored within 12 hours.
+Data reytrival times are set at a default for 12 hours
+
+d.) One Zone
+1.)S3 Express One Zone and 
+2.)S3 One Zone-IA 
+They are lower cost, but might be susceptible to data loss in the unlikely case of the loss or damage to all or part of an AWS Availability Zone.
+
+
+e.) S3 outposts:
+Amazon S3 Outposts delivers object storage to your on-premises AWS Outposts environment using Amazon S3 APIs and features, and serves workloads with local data residency requirements.
+It also helps maintain optimal performance when data must remain in close proximity to on-premises applications.
+
+f.) S3 intelligent tiering:
+This tier is useful if your data has unknown or changing access patterns.
+S3 Intelligent-Tiering stores objects in three tiers: a frequent access tier, an infrequent access tier, and an archive instant access tier.
+Amazon S3 monitors access patterns of your data and automatically moves your data to the most cost-effective storage tier based on frequency of access.
+
+Amazon S3 lifecycle policies:
+When you define a lifecycle configuration for an object or group of objects, you can choose to automate between two types of actions,
+1.) Transitions actions:
+define when objects should transition to another storage class.
+2.) Expirations actions:
+define when objects expire and should be permanently deleted.
+
+For example, you might transition objects to S3 Standard-IA storage class 30 days after you create them. Or you might archive objects to the S3 Glacier Deep Archive storage class 1 year after creating them.
+
+Use cases:
+Periodic logs
+Data that changes less frequent.

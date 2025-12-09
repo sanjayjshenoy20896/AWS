@@ -1,0 +1,53 @@
+Storage:
+Based on type of data stored there are 3 main types:
+1.) Block Storage
+It provides persistent, low-latency block-level storage volumes that attach to EC2 instances like physical hard drives.
+
+Block storage volumes can be encrypted, backed up via snapshots, and modified while in use without disrupting the instance
+There are 2 main types of primary block storage
+a.) Amazon EC2 instance store
+An unmanaged non-persistent, high-performance block storage directly attached to EC2 instances for temporary data.
+
+b.) Amazon Elastic block store:
+persistent block storage volumes for EC2 instances, offering various types for different workloads
+
+2.) Object Storage
+It is a data storage architecture that manages data as objects in a flat address space.
+Benefits:
+a.) Unlimited Scalability
+b.) Metadata storage capabilities
+eg: Amazon Simple Storage Service(S3)
+
+3.) File system Storage
+provide shared file systems accessible over networks, so multiple users and applications can access the same data simultaneously.
+
+Benefits:
+a.) Scalability
+b.) flexibility
+
+There are 2 primary file storage services
+a.) Amazon Elastic File system (EFS)
+b.) Amazon SFx
+
+
+Additional storage services:
+The services that will be listed below do not fit into any of the categories listed above
+
+Amazon Storage Gateway:
+A fully managed, hybrid-cloud storage service that provides on-premises access to virtually unlimited cloud storage.
+
+AWS Elastic Disaster Recovery
+A fully managed service that streamlines the recovery of your physical, virtual, and cloud-based servers into AWS.
+
+
+AWS shared responsibility:
+For Amazon storage, There are defined into 3 categories
+1.) Fully managed:
+AWS is responsible for everything from the hardware and infrastructure up through the entire storage stack
+Customers are only responsible for data management, access controls, and proper service configuration.
+2.) Managed:
+AWS manages the underlying storage infrastructure, hardware redundancy, and volume replication.
+Customers are responsible for data backup strategies, encryption configuration, volume performance optimization, and capacity planning.
+3.) Unmanaged:
+customers takes full responsibility for data management, backup/recovery, encryption, performance optimization, and durability.
+AWS only maintains the underlying physical hardware and network infrastructure.
