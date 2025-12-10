@@ -17,3 +17,19 @@ it creates block storage volumes locally.
 3.) Tape gateway
 super useful for businesses still using physical tape backups. 
 It provides that seamless migration of tape data into the cloud.
+
+Elastic Disaster Recovery
+It replicates critical workloads to AWS with minimal downtime. 
+Your servers' block-level data is continuously replicated to AWS, making it ideal for uses that require robust disaster recovery solutions. 
+It supports both physical and virtual servers
+
+Benefits:
+Business resilience
+Streamlines recovery
+Cost optimisation
+
+Use cases:
+Healthcare data protection
+Financial services continuity
+Manufacturing operations recovery
+
