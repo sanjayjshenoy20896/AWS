@@ -8,17 +8,40 @@ They are three types of cloud service models
 1.) Software as a service - SAAS
 it gives you quick access to cloud based web applications
 Vendor controls the entire computational stack, which can be accessed by the browser
+complete product is run by the service provider
 eg: Google G Suite
+
 
 2.) Platform as a Service
 It is a platform that we can develop,test and organise different applications for your business.
-it simplefies the process of Software development.
+it simplifies the process of Software development.
+removes the need to manage the underlying infrastructure
+service provider can focus on deploymnet and testing of software application
 eg: Amazon Elastic Beanstalk
 
 3.) Infrastructure as a Service
 virtual provision of computational resources over the cloud.
 It can provide you the entire range of Infrastructure such as storage,servers network alongside maintainance and support
+Provides networking,computing (computers) and storage (Database)
+High level of flexibility
+Easy as a parallel with on premise IT resources
 eg: Amazon EC2 
+
+
+Resource management:
+
+1.) Infrastructure as a Service
+Application , data, runtime Middleware and OS is managed by customer
+virtualisation,storage,servers and networking is managed by AWS
+eg: Amazon EC2
+
+2.) Platform as a Service
+Application and data is managed by the customer
+Runtime, Middleware,OS,virtualisation,storage,servers and network is managed by AWS
+eg: Amazon Elastic Beanstalk
+
+3.) Software as a service - SAAS
+All aspects are managed by cloud provider
 
 Aws cloud models:
 
@@ -32,3 +55,13 @@ C.) Hybrid deployment:
 The cloud deployment and on-premise development work together. This is ideal for legacy application to remain in on premise for maintainance and regulatory purpose.
 
 
+Pricing in the cloud
+AWS has 3 pricing options that follow the pay-as-you-go pricing model
+Compute:
+Pay only for the compute time
+Storage:
+Pay only for the data stored in cloud
+Network:
+Data that is transferred from out of the cloud
+This solves the issue of traditional IT
+Data that is transferred in the network is free of cost.

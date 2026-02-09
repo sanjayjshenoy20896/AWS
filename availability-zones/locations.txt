@@ -23,5 +23,33 @@ Access Control
 Compliance
 
 Edge Locations:
+Amazon has 400+ points of presence (400+ edge locations and 10+ regional caches) in 90+ cities and 40+ locations.
+Content is delivered to end users with reduced latency.
 
+
+How to choose a AWS region in setting up an application
+1.) Compliance:
+Sometimes the government would want the data to be stored in the same locally.
+
+2.) Proximity:
+Application is served closer to customer for reduced latency
+
+3.) Availability of service:
+Not all services are available in all regions
+
+4.) Pricing
+The pricing for a perticular service depends on the region
+
+Service scoping
+
+Global services:
+Availablle across all regions
+eg: IAM,ROUTE 53,waf (Web Access Firewall) and cloudfront
+
+Regional scoped
+Availablle only in specific regions
+Amazon Elastic Beanstalk 
+Amazon EC2
+Amazon recognition
+Lambda
 

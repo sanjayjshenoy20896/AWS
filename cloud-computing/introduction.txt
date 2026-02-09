@@ -12,6 +12,20 @@ Flexibility and scalability -> scalability of servers and databases.
 Pay-as-you-go Pricing model -> Pay for the services as you use them
 Security -> They have various encryption and decryption strategy
 
+Characteristics:
+1.) On demand self-service
+Users can provison resources and use them without human interaction from user services
+2.) Broad network access
+resources are available over the network and accessible over diverse client needs
+3.) Mult-tenancy and multi pooling
+Multiple customers can share the same infrastructure and applications with Security and privacy
+Multiple customers can serve from same physical servers.
+4.) Rapid Elasticity and scalability
+We can automatically deploy and dispose resources when need
+Quickly and easily scale on demand
+5.) Measured service
+Pay for the services used
+
 
 Benefits
 1.) Agility -> Allows us to innovate faster and focus on our valuable IT resources.
@@ -51,3 +65,16 @@ The AWS Cloud eliminates the need for businesses to invest in physical data cent
 Businesses don't need to set up their own infrastructure to expand internationally. AWS provides a robust global infrastructure that customers can use to deploy applications and services across multiple areas in minutes.
 
 
+Problems solved by cloud
+1.) Flexibility:
+Change resource type as needed
+2.) Cost effectiveness
+Pay as you Go
+3.) Scalability
+Accomdate the larger payloads by making hardware powerful and have additional nodes
+4.) Elasticity
+Scale the resource in and out as needed
+5.) High availability and fault tolerance
+deploy across multiple regions
+6.) Agility
+rapid develop ,test and launch applications 
