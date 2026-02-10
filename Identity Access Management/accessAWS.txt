@@ -18,3 +18,4 @@ It is viewed as an alternative to AWS Management console
 AWS SDK
 It is a language specific api (set of libraries)
 this enables to access and manage AWS services programatically
+It is embeeded within the application
