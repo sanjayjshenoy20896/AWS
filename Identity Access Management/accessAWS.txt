@@ -1,0 +1,20 @@
+How can users access AWS
+
+There are 3 ways as to how we can access resources on AWS
+1.) AWS Management console
+2.) AWS Command Line interface -> protected by access keys
+3.) AWS Software Developer KIT (SDK) -> protected by access keys
+
+Access keys are generated through AWS console
+Users are solely responsible for managing their access keys
+
+AWS CLI:
+A tool that enables you to interact with AWS Services using your command line shell using service commands
+It allows direct public aps of AWS services
+we can also run scripts to manage resources
+It is viewed as an alternative to AWS Management console
+
+
+AWS SDK
+It is a language specific api (set of libraries)
+this enables to access and manage AWS services programatically

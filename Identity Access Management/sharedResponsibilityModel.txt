@@ -1,0 +1,14 @@
+Shared responsibility Model (AWS)
+
+AWS responsibility:
+1.) infrastructure (Global network security)
+2.) Configuration and vulnerablility analysis
+3.) Compliance validation
+
+
+User responsibility:
+1.) Users,Groups,Roles,Policies Management and monitoring
+2.) Enable MFA
+3.) Rotate all keys
+4.) Use IAM tools to apply appropratie permissions
+5.) Analyze access patterns and review permissions

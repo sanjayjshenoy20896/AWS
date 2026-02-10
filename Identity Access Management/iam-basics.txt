@@ -1,0 +1,87 @@
+AWS Identity Access Management (AWS IAM)
+
+It is a globally scoped service that is available in all regions supported in AWS
+
+Initially when we login to create an account in AWS.
+A root user is created by default. This should not be used or shared
+
+Users:
+They are pepole within an organisation and can also be grouped together
+
+Groups:
+It is special collection of users that work on services together.
+They can only contain users and not other user Groups
+
+
+Distiniction between groups and users:
+Users dont have to belong to group
+User can belong to multiple groups
+eg: Consider Alice,bob and charles work together, David and Edward work together and fred works alone.
+Alice,bob and charles -> Developer
+David and Edward work together -> Operations
+
+IAM Permissions:
+Users or groups can be assigned JSON documents called policies
+These policies are used to define Permissions of the users
+In AWS, we apply the least privilage principle:
+Give users the only the services they need access to
+
+IAM policies inheritance
+When a policy to access a service is added against a group. All users in that group would have the policy attached to them
+A single user that does not belong to a group can be specific permissions which are called inline policies. These policy are attached only to a specific user.
+
+
+IAM policies Structure:
+
+Please note the policy Structure:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3-object-lambda:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+Policy Structure consits of following:
+1.) Version ->it includes the policy language version 
+2.) id: an identifier for the policy (Optional)
+3.) Statement: contains one or more individual statements
+
+statements consits of following:
+1.) Sid: am identifier for the Statement (Optional)
+2.) Effect: Whether it "Allow" or "Deny" access
+3.) Principle: account/user/role to which this policy applied to
+4.) Action: list of actions policy "Allow" or "Deny"
+5.) Resource List: lsit of resources for which the actions are applied
+6.) Condition: conditions for which this policy is in effect ( Policy)
+
+
+IAM Roles:
+Some AWS Services will need to perform actions on our behalf
+assign permissions to AWS SERVICES with IAM Roles
+
+eg: EC2 Instance roles. Lambda function role,roles for cloud formation
+
+IAM Security Tools
+1.) IAM Credentials report (Account level)
+A report that lists all your account users and status of various Credentials
+
+2.) IAM Access Advisor (user-level):
+Access advisor shows the service permissions granted to a user and when those services were last accessed
+
+
+IAM Guidelines and best practices
+1.) Dont use root account except for AWS account setup
+2.) One Physical user = one AWS User
+3.) Assign users to group and assign permissions to groups
+4.) Create a strong policy
+5.) Use MFA
+6.) Create and use role for  giving permissions to aws services
+7.) Use Access keys for programatically access services
