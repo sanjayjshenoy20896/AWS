@@ -1,0 +1,9 @@
+EC2 instance connect:
+This is used for establishing a secure connection in the browser. it uses SSH behind the scenes
+
+How to use:
+1.) on ec2 dashbaord, we can just go the instances section and select the instance
+2.) We can establish the connection using Connect option and select EC2 instance connect on dropdown
+
+
+EC2 Instance roles:

@@ -1,0 +1,52 @@
+Amazon EC2:
+It is one of the most popular of AWS offering
+EC2 = Elastic Cloud Compute = Infrastructure as a Service
+It mainly conssiste of 
+1.) Renting Virtual machine (EC2)
+2.) Storing data on virtual drives (Elastic Block Storage)
+3.) Distributing load across machines (Elastic Load Balancer)
+4.) Auto Scaling group
+It is fundamental to understand how cloud works
+
+EC2 Sizing and config options
+Operating System (OS): Linux,Windows or Mac OS
+How much compute power & Cores is needed
+How much random-access memory needed
+how much storage space (EFS & EBS) & (EC2 instance store)
+Network speed: speed of the card,public IP Address
+Firewall rules: security group
+Bootstrap script (configure at first launch):EC2 User data
+
+EC2 User Data:
+It is possible to bootstrap our instances using an EC2 User data script
+bootstrapping means launching commands when a machine starts
+The script is only run at the instance first start
+They include task as follows
+1.) Installing updates
+2.) Installing software
+3.) Dommon commin files on internet
+4.) Anything you can think of
+
+The EC2 user data script runs with the root user
+
+Shared responsibility model:
+AWS
+Infrastructure
+Isolation
+Replacing Faulty hardware
+compliance validation
+
+User
+Security groups
+OS -system patches and updates
+Software util;ities
+IAM ROLES ASSIGNED TO ec2 and IAM USER ACCESS MANAGEMENT
+
+
+Summary:
+1.) eEC2 instance: AMI(OS) + Instance Size (CPU + RAM) +sTORAGE + sg +EC2 user data
+2.) Security : Firewalls attched to ec2 instance
+3.) EC2 user data: SCRIPT LAUNCHED AT START OF AN Instance
+4.) ssh : Terminal access to EC2 instances (port 22)
+5.) EC2 INSTANCE ROLE
+6.) Purchase options

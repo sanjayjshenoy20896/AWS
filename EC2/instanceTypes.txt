@@ -1,0 +1,47 @@
+EC2 Instance Types:
+They are broadly classified into 7 Types
+1.) General Purpose
+2.) Compute Optimised
+3.) Memory Optimised
+4.) Accelerated Computing
+5.) Storage Optimised
+6.) Instance Features
+7.) Measuring Instance Performance
+
+Naming Convention
+eg: m5.2xlarge
+m:instance class
+5: generation (AWS Improves them over time)
+2xLarge: size within instance class
+
+
+1.) General Purpose:
+This is great for a diversity of workloads such as web servers or code repos
+They have a balance between computre.memory and Network
+For leaning purpsoe, have used t2.micro general purpose EC2 Instance
+
+2.) Compute Optimised
+It is great for compute intensive tasks that require high Performance like batch processing, media transcoding,high perf web servers, high perf Computing, machine learning,gaming servers
+
+3.) Memory Optimised
+For workloads that process large datasers
+Use cases:
+High performance , relational/non-relational databases
+distributes web scale cache stores
+in-memory databases Optimised for BI (business intelligence)
+real time processing of big unstructured data
+
+4.) Storage Optinmised
+Great for storage-intensive tasks that require high,sequnetial read and write access to large data sets on local storage
+Use cases:
+High freq online transaction
+databases
+Cache for in-memory databases
+Data warehousing applications
+Distributes file systems
+
+
+Website to compare instances of EC2
+instances.vantage.sh
+ec2instances.info
+

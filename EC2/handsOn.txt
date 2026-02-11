@@ -1,0 +1,6 @@
+Launching an EC2 Instance running Linux
+Steps:
+1.) Launching our first virtual server using AWS Console
+2.) High level approach to vatrious params
+3.) Launching a webserver using EC2 User data
+4.) How to start/stop /terminate our instance
