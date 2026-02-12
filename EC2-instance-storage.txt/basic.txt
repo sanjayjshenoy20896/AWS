@@ -1,0 +1,21 @@
+EC2 Storage section
+
+1.) EBS Volume:
+It is a network drive you attach to your instances while they run
+It allows your instance to persist data, even afte their termination
+They can be mounted at one instance at a time
+They are bound to a specific zone
+They might be a lit of network, there might be latency
+They can be detached between different ec2 instances
+An EBS Volume of one zone cannot be attched to another zone
+It needs to have a provisoned capacity 
+(size in DBS and iops)
+User gets billed for provisioned capacity
+
+EBS - Delete on Termination attribute
+They EBS Volume can deleted on terminiation 
+This behaviour can be controlled by AWS CPNSOLE/CLI
+Use Case:Preserve root volume when instance is termintaed
+
+EBS Multi-attach
+These are instances where multiple ebs volumes are attached to EC2 Instance

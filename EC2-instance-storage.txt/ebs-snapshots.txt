@@ -1,0 +1,10 @@
+EBS Snapshots:
+Make a backup of uyour ebs vlume at any point in time.
+NOt necessary to detach volume to do snapshot but recommended
+Copy copy snapshots across AZ or region
+
+Features
+snapshot archive -> 75% cheaper. takes 24 to 72 hours for restoring archive
+Recycle bin for ebs snapshots to recover from accedental deletion
+specify retention form 1 day to 1 year
+
