@@ -1,0 +1,15 @@
+EC2 Instance Storage - Summary
+EBS Volumes:
+network drives attatched to on ec2 instance at a time.
+It is mapped to an availability zones
+EBS Snapshots to transfer to multiple azs
+
+AMI: Ceate read-to-use EC2 instances with our customisations
+EC2 Image builder: Automate byult,test and distribute AMIS
+EC2 Instance Store: High Performance hardware disk attched to our EC2 instance
+lost of our instance is stopped / terminated
+
+EFS:Network file system can be attched to 100s on instances in a region.
+EFS-IA: cost-optimised storage class for infrequent accessed files
+FSx for Windows: Network File System for Windows servers.
+FSx for Lustre : High Performance Computing Linux file system.

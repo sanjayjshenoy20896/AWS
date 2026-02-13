@@ -1,0 +1,19 @@
+Elastic File System (EFS):
+Manages Network File System (NFS) that can be mounted on 100s of EC2.
+it works with Linux EC2 instances in multi-AZ
+Highly available ,scalable,expensive (3Xgp2),pay per use, no capacity planning
+
+Difference between EBS vs EFS
+EBS:
+They are bound to a single availability Zone and cant be attched to another AZ
+To switch to another availabilty zone, we  will need to create a snaphot of the EBS volume and restore it in a new AZ.
+EFS:
+They are shared by multiple ec2 instances on multiple AZ at the same time using EFS Mount Target.
+
+EFS Infrequent Access (EFS-IA):
+Storage class is cost optimised for files not accessed every day
+Upto 92% lower cost compared to EFS Standard
+Once EFS-IA is enabled, it will automatically move files to EFS-IA based on last time they were accessed.
+Enable with lifecycle Policy
+It is transparent to the applications accessing EFS
+

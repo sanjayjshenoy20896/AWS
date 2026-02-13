@@ -1,0 +1,14 @@
+Shared Responsibility model
+
+AWS:
+Infratstructure
+Replication of data for EBS Volumes and EFS drives
+Replace faulty hardware
+Ensuring their employees cannot access your data
+
+User:
+Setting up backup / snapshot procedures
+Data encryption
+Responsibility of any data on drives
+Understand the risk of Using EC2 Instance Storage (data loss incase of instance termination)
+

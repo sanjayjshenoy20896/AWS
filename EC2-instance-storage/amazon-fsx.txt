@@ -1,0 +1,21 @@
+Amazon FSx
+Fully Managed service
+Launch 2 party high performance file systems on AWS.
+There are 3 main offerings
+1.) FSx for Lustre
+Fully Managed high perfomance and scalable file storage for HPC
+It is derived from "Linux" and "cluster"
+Use case:
+Machine Learning,Analytics Video processing and Financial modeling
+Scales upto 100s GB/S millions of IOPS, sub-ms latencies
+It stores in data  in amazon S3 
+
+2.) FSx for Windows File Server
+Fully Managed hight reliable and scalable Windows native shared file system
+Built on Windows File Server
+Supports SMB protocol & Windows NTFS 
+Integrated with Microsoft Active Directory
+Can be accessed from AWS or on-premise Infrastructure
+
+3.) Fsx for NetApp ONTAP
+4.) FSx for OpenZFS 

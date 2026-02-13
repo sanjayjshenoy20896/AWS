@@ -1,0 +1,9 @@
+EC2 Image Builder:
+Used to automate creation of Virtual Machines or Container images.
+->Automate the creation,maintain,valiadte and test EC2 AMIs
+
+ec2 Image builder -create-> Builder ec2 instance ->Build comp and customise softwares  ->New AMI is created -> Test ec2 instance (run tests on AMI)
+can be distributes in multiple regions
+Can be run on a schedule
+Free service (only pay for underlying resources)
+eg: pay only for the AMI image create and the running ec2 instances

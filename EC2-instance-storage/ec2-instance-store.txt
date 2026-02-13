@@ -1,0 +1,13 @@
+EC2 instance store:
+EBS volumes are network drives with good but limites performance
+For high performance hardware disk, use EC2 instance store
+They are attached to the ec2 instances.
+
+Use case:
+Better I/O performance
+they are ephermal storage
+goof for buffer,cache,scratch data or temporary content
+Risk of data loss if hardware fails
+
+
+backups and data replication are users responsibility
