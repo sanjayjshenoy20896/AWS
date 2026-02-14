@@ -1,0 +1,35 @@
+Auto Scaling Group:
+The load pf website and applications can chnage from time to time.
+In cloud, we can create and get rid of servers very quickly
+The goal of an Auto Scaling group (ASG) is as follows:
+1.) Scale out instances to match an increased load
+2.) Scale in instances to match decreased load
+3.) Ensure a maximum and minumum number of machines running
+4.) Automatically register new instances to a load balancer.
+5.) Replace new instances (deregister)
+
+Cost savings: Only run at optimal capacty
+Minimum Size -> min number of EC2 instances
+Desired Capacity -> Number of instances to be added at a time
+Maximum size -> maximum number of instances that application can have
+
+Auto Scaling group in AWS with Load Balancer:
+web traffic -> ELB -> EC2 instances
+
+ASG - Scaling Strategies:
+Manual scaling -> Update size of ASG manually
+Dynamic Scaling:  Respond to chnaging demand
+- Simple/ step Scaling
+Cloud watch alarm is triggered (cpu>70) , then add 2 units
+Cloud watch alarm is triggered ( CPU <30).remove2 units
+
+- Target Tracking Scaling
+eg: Want average ASG CPU to stay at around 40%
+
+-Scheuled scaling
+Anticipate a scaling based on known usage patterns
+
+-Predictive scaling
+Uses Machine learining to predict futrure scal;ing ahead of time
+This is used for predictive load patterns
+

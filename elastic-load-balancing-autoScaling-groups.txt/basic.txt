@@ -1,0 +1,35 @@
+Scalability and high Availablility:
+Scalability means application / system can handle greater loads by adapting
+
+There are 2 kinds of Scalability
+a.) Vertical Scalability
+b.) Horizontal Scalability
+
+It is linked but it is different to High Availablility
+
+Vertical Scalability:
+Increase the size of instance
+eg:if instance runs on t2.micro 
+scaling Vertically means running it on a t2.large
+This is very common for non-distributed systems such as database
+There is usually a hardware limit for scaling
+Horizontal Scalability:
+Increase the number of instances / systems for your application
+It is used for distributed systems
+Very common for web application or modern application
+Here we use Auto Scaling group and Load balancer
+
+
+High Availablility
+It goes hand in hand with horizontal scaling
+it means running your instances / system in at least 2 Availablility zones
+High Availablility to survive a data loss
+
+Scalability vs Elasticty vs Agility
+Scalability -> Ability to accommodate a larger load by making the hardware stronger (scale up), or by adding nodes (Scale out)
+
+Elasticty -> Once system is scalable, There is some autoscaling involved to scale resources up or down
+This is cloud-friendly: pay-per-use demand,optimize costs
+
+Agility: New IT resources are only a click away.
+This means reduction in time to make those resources available to developers from weeks to just minutes.

@@ -1,0 +1,40 @@
+Load Balancer:
+They are servers that forward internet traffic to multiple servers downstream.
+
+WHY:
+Spread load across multiple downstream instances
+Expose a single point of access (DNS) to your application.
+Seemlessly handle failurs of downstream instances
+Regular health checks
+Provide SSL termination (https) for your websites
+High Availablility across zones
+
+Why use an Elastic Load Balancer?
+It is a managed load balancer.
+AWS guarantees that it will be working
+AWS takes care of upgrades, maintenance and high availability
+AWS Provides only a few configuration knobs.
+
+It costs luess to setup own load balancer but it will be a lot more effort on your end.
+(maintenance and integrations)
+
+4 kinds of offered to AWS
+1.) application LOAD Balancer (HTTP/HTTPS) -Layer 7
+http/https/grpc - layer 7
+http Routing features
+Static DNS (URL)
+2.) Network Load Balancer (ultra-high performance, allow for TCP) - Layer 4
+TCP/UDP Protocols -> layer 4
+High performnce
+Static IP thriugh elastic IP
+
+3.) Gateway Load Balancer - LAYER 3
+GENEBVE Protocol on IP packets
+Route traffic to firewalls that is manged on EC2 instances
+intrusion detection
+
+users ->gwlb -> application
+        Traffic (2 party security Applicances)
+        
+4.) Classic load balancer (retired in 2023) -Layer4 &7
+
