@@ -1,0 +1,12 @@
+Amazon S3 - Replication (CRR & SRR)
+Enable Versioning in source and destination buckets
+CRR -> Cross Region Replication
+SRR -> Same Region Replication
+
+Buckets can be in different AWS accounts
+Copying is asynchrous to S3
+Must give proper IAM permissions to S3
+
+Use cases:
+CRR - compliance,lower latency access, replication across accounts
+SRR -? log aggrrgation,live replication

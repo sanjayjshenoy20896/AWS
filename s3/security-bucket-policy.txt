@@ -1,0 +1,47 @@
+Amazon S3 - Security bucket policy
+
+1.) User - based 
+IAM policies  -> Which api calls should be allowed for speicifc user from IAM
+
+2.) Resource -based
+Bucket policies -> Bucket wide rules form s3 console - allow cross account
+OBJECT ACCESS CONTROL LIST (ACL) ->finer grain (can be disabled)
+Bucket Access Control List (ACL) ->less common  (can be disabled)
+
+Note:
+an IAM principle can access s3 object if 
+-> user IAM permissions ALLOW it OR resource policy ALLOWS it
+-> There is no explicit deny
+
+Encryption: Encrypt objects in S3 using encryption keys
+
+Bucket Policy:
+{
+    "Version":"2012-10-17",
+    "Statement":[
+        {
+            "Sid":"PublicRead",
+            "Effect":"Allow",
+            "Principle":"*",
+            "Action":[
+                "s3:GetObject"
+            ],
+            "Resource":[
+                "arn:aws:s3:::examplebucket/*"
+            ]
+        }
+    ]
+}
+JSON based policy
+-> Resource: buckets and objects
+-> Effect: Allow / Deny
+-> Actions: Set of API to allow or Deny,
+-> Principal: The account or user to apply the principle to
+
+Use S3 bucket for policy to
+-> Grant public access to the bucket
+-> force objects to be encrypted at upload
+-> grant access to another account (Cross Account)
+
+AWS Policy Generator:
+https://awspolicygen.s3.amazonaws.com/policygen.html

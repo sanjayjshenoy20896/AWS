@@ -1,0 +1,5 @@
+Amazon S3 - Versioning
+You can version your files in Amazon S3
+It is enabled at the bucket level
+When file with the same key is enabled , it will change the version of it
+We can restore and rollback to previous versions

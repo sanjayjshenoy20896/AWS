@@ -1,0 +1,10 @@
+Amazon S3 - Static Website hosting
+They can host websites and have them accessible on the internet
+They webiste url will be (Depending on the region)
+Website url will be as follows
+http://<bucket-name>.s3-website-<AWS Region>.amazonaws.com
+(or)
+http://<bucket-name>.s3-website.<AWS Region>.amazonaws.com
+
+if public reads are not enabled, we would get 403 Forbidden error
+

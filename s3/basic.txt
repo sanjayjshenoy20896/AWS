@@ -1,0 +1,46 @@
+AWS Simple Storage Service - AWS S3
+One of the main building blocks of AWS
+It is commonly mentioned as infinitely scaling Storage
+Many websites use S3 as a backbone
+Many AWS services use S3 as an integration as well
+
+Use Cases"
+1.) Back up and Storage
+2.) Disaste recovery
+3.) Archibe
+4.) Hybrid cloud Storage
+5.) Application hosting
+6.) Media hosting
+7.) Data lakes and big data analytics
+8.) Software delivery
+9.) Static websites
+
+Buckets:
+It allows people to store objects (files) in buckets (directories)
+Bukets must have a globally unique name (across all regions all account)
+buckets are defines at region level
+It is a global service but buckets are created in a region.
+Naming convention:
+no uppercase, 
+no underscore, 
+charlength -> 3-63 chars long
+not an ip
+must start with a lowercase or number
+must NOT start with prefix xn-
+must Not start with suffix -s3alias
+
+
+Amazon S3 - Objects
+Objects have a key
+They key is the full path
+key is composed of prefix + object name
+There is no concept of difectories within buckets
+It is just keys with very long names that contain slashes
+They values are content of the body
+Max Object size os 5TB
+if uploading more then 5Gb, must use multi-part upload
+
+MetaData (list of text key / value pairs -> system or user metedata)
+Tags -> used for security/lifecycle
+Version Id (if versioning is enabled)
+
