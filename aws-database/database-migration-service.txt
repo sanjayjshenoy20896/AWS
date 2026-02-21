@@ -1,0 +1,6 @@
+Database Migration service
+Quickly and securely migrate databses to AWS,resilient and self healing
+the source database remains available
+Supports 2 types
+Homogenous: same struture dbs
+herterogenous: different structure dbs

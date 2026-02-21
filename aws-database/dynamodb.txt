@@ -1,0 +1,24 @@
+DynamoDB: (Non relational database)
+Fully managed Highly available with replciation across 3AZ
+Scales to massive workloads , distributed serverless db
+scales upto millions of requests per second , trillions of rows,100s to TB of storage
+fast and consistant
+Single-digit millisecond latency - low latency retrival
+Integrated with iam for recurity , authorization and administaration
+Low cost and auto scaling capabilities
+Standard and inFrequent Access (IA) Table class
+link: https://aws.amazon.com/nosql/key-value
+
+Type of data
+it is a key value database
+
+DynamoDB Accelerator -DAX
+Fully Managed in-memory cache for DynamoDB
+10x perofrmance improvememnt , microsecond latency -> when accessing your DynamoDB
+Secure,highly scalable & highly available
+Difference with elastic cache at CCP level
+it is used and integrated with Dynamo db unlike elastic cache
+
+Global tables:
+Make table accessible with low latency in multiple regions
+Active-active Replication

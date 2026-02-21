@@ -1,0 +1,74 @@
+Other Database Services
+
+Amazon EMR:
+it stands for Elastic MapReduce
+it helps for creating Hadoop clusters to analyze and process vast amount of data.
+Can be made of hundreds of EC2 instances.
+It supports Apache Spark,Hbase,Presto,Flink etc..
+It takes care of provision and configuration.
+Auto Scaling and integrated with Spot instances
+Use Cases:
+dataprocessing, machine learning,web indexing and big data
+
+Amazon Athena:
+Serverless Query service to perform analytics against S3 Objects.
+Uses standard SQL Language to query the files
+Supports CSV,JSON,ORC,AVRO and Parquet (Built on Presto)
+We can aslo have reporting on anthena using QuickSight
+
+pricing: $5 per TB of data scanned
+use compressed or columnar data for cost-savings (less scan)
+Use cases:
+Business intelleigence,analytics,reporting,analyze and Query vpc flow logs,ELB logs,Cloudtrails
+Exam Tip: analyse data in s3 serverless query sql -> use Athena
+
+QuickSight:
+Serverless machine learning powered business intellegence service to interactive dashboards
+fast, automatically scalable,embeddable with per-session pricing
+Use case:
+business analytics
+building visualizations
+perform ad-hoc analysis
+get business insights
+Integrated with RDS,AURORA,Athena,redshift ,s3
+
+DocumentDb:
+It is same for MongoDb (which is a NoSQL database)
+
+MongoDB is used to store,query and index JSON data
+similier deployment as Aurora
+Fully Managed highly available with replication across 3 AZ
+DocumentDb storage automatically grows in increments of 10gb
+
+Automatically scale to workloads with millions of requests per seconds
+
+Amazon Neptune:
+Fully managed graph database
+Highly available across 3 AZ yith upto 15 read replicas
+Build and run application working with highly connected datasets - optimised for complex and hard queries
+Can store upto billions of relations and query the grapgh with milliseconds latency
+Highly available with replication across multiple AZ's
+
+Amazon Timestream:
+Fully managed, fast,scalable, serverless time series database
+Automatically scalling up/down to adjust capaccity.
+sTORE AND analyse trillions of events per day
+1000s seconds faster and 1/10th the cost of relational databases
+Built in tume series analytics funct
+
+Managed Block chain:
+Block chain makes it possible to build applications where multiple parties can execute transactions without need for a truested ,central authority
+It is a managed service to 
+Join public blockchain networks
+create your own scalable private network
+
+Compatible with hyberLedger and etherium
+
+AWS glue:
+Managed extract,transform and load (ETL) service.
+Useful to prepare and transform data for analytics.
+fully serverless service
+Glue data Catalog: catalog of datasets
+it can be used by athena,redshift and EMR
+
+

@@ -1,0 +1,34 @@
+Databases:
+Storing data on risk has its limit
+Data is stored in a structured way
+Databses can be indexed to effeciently  query / search through data
+define relationships between your dsatasets
+
+Databases are optimized for a purpose and come with different features,shapes and constraints
+
+Relational Databases
+Data is stored in rows and colums.
+Column anme referes to the attribute to the table
+Each row is defined as a record.
+SQL language is used to perform queries and lookups
+
+NoSQL Databases:non relational databases
+They are purpose built for specific data models and have flexible schemas for building modern applications
+
+Benefits:
+Flexibility: east to evolve data models
+Scalability: designed to scale out by using distributed clusters
+High-performance: optimised for a specific data model
+Highly functional: types optimised for data model
+eg: key-value,document,graph,in-memorymsearch Databases
+Data is stored as a json document.
+
+Database and shared responsibility model:
+It offers to use manage databases
+Benefits include:
+1.) Quick provisioning, High Availability, Vertical and Horizontal Scaling
+2.) Automated backup, upgradses
+2.) OS PATching is handled by AWS
+3.) Monitoring and altering
+
+Note: many databases could be run on the EC2 but you must handle yourself the resiliency,backup,patching,high Availability, fault tolerance and scaling

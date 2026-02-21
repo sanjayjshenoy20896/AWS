@@ -1,0 +1,8 @@
+Amazon ElastiCache
+It is used to get managed Redis or memcached
+They are in-memory databases with high performance and low latency
+reduce laod off databases for high intensive read workloads
+
+Architecture:
+ELB -> ec2 instance in an ASG -> ELASTIC CACHE
+                              -> rds (slower)  

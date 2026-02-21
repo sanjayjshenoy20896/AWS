@@ -1,0 +1,24 @@
+RedShift 
+It is based on PostgreSQL, but its not used for OLTP
+OLTP -> Online Transaction Processing
+OLAP -> Online Analytical Processing
+Load data once every hour.
+10X Better performance , can scale upto PBs of data
+Columnar Storage of data (Instead of row based)
+Mpp -> Massivly Parallel Query Execution (highly available)
+pay as you go based on the instances provsioned
+It has a SQL interface for performing the queries
+BI tools like AWS QuickSight or Tableau integrate with it
+
+Serverless:
+automatically provisions  and scales data warehouse underlying capacity
+Run analytics workloads without managing data warehouse infrastructure
+Pay for what you use
+Use case: Reporting dashboard,Dashboard application, real-time abalytics
+
+steps:
+Enable amazon redshift serverless for your aws account
+connect using amazon redshift or any other tools
+run queries automaticallu provision and scale workloads
+pay only for compute during analysis
+

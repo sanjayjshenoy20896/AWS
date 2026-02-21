@@ -1,0 +1,48 @@
+Amazon RDS (Relational databases)
+Its a manages database for db and uses SQL as a query language
+allows you to create databases in the cloud that are managed by AWS
+eg: postgres,MySQL,MariaDB,Oracle,Microsoft SQL Server, IBM DB2,Aurora (AWS Proprietary database)
+
+Advantages:
+1.) Automatic provisioning
+2.) Continours backups and restore to specific timestamp
+3.) Monitoring dashboards
+4.) Read replicas for improving read performance
+5.) multi AZ setup for disaster recovery
+6.) Maintaince windows
+7.) Scaling
+8.) Storage is backed by EBS
+
+Solution Architecure:
+ELB -> EC2 instances <-> read/write -> database
+
+Amazon Aurora: (Not Open Sourced)
+It is a Proprietary technology from AWS
+supported dbs: postgresSql and mysql
+It is AWS Cloud optimised and claims 5xperfomance improvement over MySQL on RDS OVER 3X THE performance OF postgres ON RDS
+It grows automatically in incremnets of 10gb up to 256TB
+It is 20% more than rds but more effeciently.
+
+Serverless:
+Automated database instantiation and auto-scaling based on actual usage
+No capacity planning is nneds
+Least managaemnt overhead
+Pay per second, can be more cost effective
+good for infrequenctm intermittent or unpredictable
+Shared storage volume
+
+RDS Deployements: Read Replicas, Multi-AZ
+1.) Read Replicas
+Scale the read workload of the DB
+Create upto 15 read replicas
+Data is written on the main db
+
+2.) mULTI-AZ
+Failover in case of AZ outage (high availablility)
+data is read and written in the main db
+can only have one Failover
+
+3.) Multi region:
+Disaster recover in case of region issue
+Local performance for Global reads
+Replication cost
