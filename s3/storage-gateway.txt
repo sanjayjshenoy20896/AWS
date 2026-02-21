@@ -1,0 +1,28 @@
+Hybrid Cloud For Storage
+AWS is pushing for hybrid Cloud
+a.) Part of infratstruycture is on Cloud
+b.) Part of your Infrastructure is on the Cloud
+
+This is due to the following
+-> Long Cloud migrations
+-> Security requirements
+-> Compliance requirements
+-> IT Strategy
+
+It is a proprietary storage technology (not like EFS /NFS). so how do you expose the S3 data on-premise
+
+AWS Storage Cloud Native options
+Block -> Amazon EBS,EC2 Instance Store
+File -> Amazon EFS
+Object -> Amazon S3,Glacier
+
+Bridge the gap between on premise data and cloud data in S3
+Hybrid Storage servcie to allow on-premises to seamlessly to use AWS Cloud
+Use Cases:
+Disaster Recovery,backup & restore,tiered storage
+
+Types of Storage Gateway:
+1.) File
+2.) Volume
+3.) Tape
+

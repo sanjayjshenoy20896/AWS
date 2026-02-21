@@ -1,0 +1,65 @@
+Amazon S3 Storage Classes
+There are 7 types of Storage Classes as follows
+
+Amazon S3 Standard - General Purpose
+1.) used for frequently accesses data
+2.) low latency and high throughput
+3.) Sustain 2 concurrent facility failures
+Use Cases:
+Big Data Analytics, mobile and gaming applications, content distribution
+
+Amazon S3 Standard-Infrequent Access
+for data that is less frequently accessed but required rapid access
+lower cost than S3 Standard
+99.9 % Availability
+
+Amazon S3 One Zone-Infrequent Access:
+for data that is less frequently accessed but required rapid access
+lower cost than S3 Standard
+99.5 % Availability
+high durability in a single AZ; data lost when AZ is destroyed
+Use cases: Secondary backup copies of data
+
+
+Glacier Storage class:
+Low -cost object storage for archiving and backup
+Pricing: price for storage + object retrival cost
+
+Amazon S3 Glacier Instant Retrival 
+Milisecond retrival, great for data accssed once a quater
+Minimum storage duration of 90 days
+
+Amazon S3 Glacier Flexible Retrival
+Expedited (1 to 5 minutes), Standard (3 to 5 hours) Bulk (5 to 12 hours) - free
+minumum storage duration of 90 days
+
+Amazon S3 Glacier Deep Archive -> long term storge
+Standard (12 hours), Bulk (48 hours)
+
+Amazon S3 Intelligent tiering
+Small monthly montioring and auto tiering
+No retrival charges
+Automatic movement between tiers
+There are 5 tiers:
+1.) Frequent access tier (Automatic) : default tier
+2.) Infrequent Access tier (Automatic) : objects not accessed for 30 days
+3.) Archive Instant Access Tier: obejcts not accessed for 90 days
+4.) Archive instant access: configurable for 90 days to 700+ days
+5.) Deep Archive Access tier: configurable from 180 days to 700+ days
+
+When we create an object in S3, We can do the following
+1.) We can choose the storage class
+2.) We can move between classes manually 
+3.) We can move between classes using S3 Lifecycle configurations
+
+Durability and Availability:
+
+Durability (11 9's):
+High Durability (99.999999999%) of all objects across multiple AZ
+It is same for all storage classes
+
+Availability:
+Measures how readily a service is Available
+Varies depending on storage class
+eg: S3 Standard has 99.99% Availability = not available 53 minutes a year
+

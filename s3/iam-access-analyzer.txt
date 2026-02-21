@@ -1,0 +1,6 @@
+IAM Acccess Analyzer for S3
+Ensures that only intended people have access to your S3 buckets
+EG:
+Publicly accessible bucket, bucket share wuth other AWS account
+Evaluates S3 Bucket Policies ,S3 ACLS,S3 Access Point Policies
+Powered by IAM Acccess Analyzer

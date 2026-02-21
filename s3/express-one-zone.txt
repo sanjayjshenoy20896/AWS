@@ -1,0 +1,17 @@
+Amazon S3 - Express One Zone
+High performance , single Availability Zone
+Objects stores in a directory bucket (Buket in a single AZ)
+Handle 100,000s requests per second with single-digit millisecond latency
+Upto 10x better performance than S3 Standard (50% lower costs)
+High durability (99.99999999) and Availability (99.95%)
+Co-locate storage and compute in same Az (Reduce latency)
+Use cases:
+latency-sensitive apps, data-intensive apps,AI&ML TRAINING ,financial modelling,media processing and HPC
+
+S3 Encryption:
+Server side encryption (default)
+When user uploads the object in the bucket.
+The data gets encrypted for security reasons
+
+Client Side encryption:
+User encrypts the file before uploading it.

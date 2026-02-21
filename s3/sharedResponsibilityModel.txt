@@ -1,0 +1,13 @@
+Shared Responsibility Model:
+AWS:
+Infrastructure -> Global security,durability,avalablity,sustain concurrent loss of data in 2 facilities
+Confirguration and vulnerable
+Compliance
+
+User:
+Versioning
+Bucket Policies
+Replication
+Logging and Montioring
+S3 Storge classes
+Data encryption at rest and in transit

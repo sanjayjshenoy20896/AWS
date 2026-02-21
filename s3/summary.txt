@@ -1,0 +1,3 @@
+Summary:
+Buckets vs Objects: Global unique name, ties to a Region
+S3 Security: IAM Policy, S3 Bucket Policy (Public Access),S3 Encryption

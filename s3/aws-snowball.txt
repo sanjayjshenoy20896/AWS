@@ -1,0 +1,37 @@
+AWS Snowball:
+Highly-secure ,portable devices to collect and process data at the edge and migrate the data into and out of AWS.
+Helps migrate up to Petabytes of data
+Snowball Edge Storage Optimised  -> Compute (104vCPU), Memory (416GB) and Storage(SSD) 210TB
+Snowball Edge Compute Optimised -> Compute (104vCPU), Memory (416GB) and Storage (28TB)
+
+Data Migration with Snowball:
+Challenges:
+Limited Connectivity
+Limited Bandwidth
+High network cost
+Shared Bandwidth
+Connection stability
+
+If data transfer takes more than a week to transfer over network, use Snowball devices
+
+What is Edge Computing
+Process data while its being created on an edge location
+These location may have limited internet and no access to computing Powered
+We setup a Snowball Edge device to do Edge computing
+-> use Snowball Edge Compute Optimisied & Storage Optimised
+-> Run EC2 instances or Lambda functions at the edge
+
+Use Case:
+preprocesses data, Machine learning and transcoding media
+
+Pricing:
+You pay for device usage and data transfer out of AWS
+Data Transfer IN to Amazon S3 is $0.00 per GB
+On Demand -> Includes a one-time service fee per job which Includes
+->10 days usage for Snowball Edge Storage Optimised 80TB
+->10 days usage for Snowball Edge Storage Optimised 210TB
+
+Shipping days are not counted towards includes 10 or 15 days
+Commited Upfront
+Pay in advance for monthly , 1-year and 3 years of usage (Edge Computing)
+62% discount Pricing
