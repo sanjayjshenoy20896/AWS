@@ -1,0 +1,11 @@
+Amazon Lightsail:
+Virtual servers,storage,databases and networking all in one place.
+low and prredicatble pricing
+Simpler alternative to using EC2,RDS,ELB,EBS AND ROUTE53
+Great for people with little cloud experience
+Can set up notiifcations and monitoring resources
+Use cases:
+Simple web applications (templates for LAMP,NGINX,MEAN,Node.js)
+Websites (templates for WordPress,Magento,Pleask,Joomla)
+DEV/TEST ENV
+Has high availability but no autoscaling, limited AWS integrations

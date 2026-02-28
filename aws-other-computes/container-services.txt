@@ -1,0 +1,26 @@
+Elastic Container Services:
+Launch Docker containers on AWS
+One must provison and maintain the infrastructure (EC2 Instances)
+AWS handles starting and stopping containers
+has integrations with Application Load Balancer
+
+Fargate:
+Launch Docker conatinmers with AWS
+Not needed to provison ec2 Instances
+It is a serverless offering.
+It runs containers based on CPU/RAM usage needed
+
+Amazon Elastic Container Registry:
+private docker registry on aws to store docker images
+These images can be run on ECS or Fargate
+
+
+Amazon EKS (Elastic Kubernetes Service)
+It allows to launch and manage Kubernetes clusters on AWS
+
+Kubernetes is an open-source system for management,deployment and scaling of containerzed apps
+They can be hosted on ECS Instances
+1.) ECS
+2.) Fargate (serverless)
+
+It is cloud-agnostic

@@ -1,0 +1,7 @@
+Amazon api gateway:
+it is a Serverless http api service
+It helps in exposing lambda function as an api to handle response to events
+Fully managed service for developers to easily create,publish,maintain,monitor and secure apis
+It is serverless and scalable
+Supports RESTful API's and WebSocket APIs
+support for security,user auth,api thrittling, api keys and monitoring 

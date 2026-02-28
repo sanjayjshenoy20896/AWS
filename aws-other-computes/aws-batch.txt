@@ -1,0 +1,23 @@
+AWS Batch:
+Fully managed batch procesing at any Scale
+Effeciently run 100,000 of computing batch jobs on AWS
+a batch jon is a job with start and an end
+It will dynamically launch EC2 instances or spot instances
+It will provision right amount of memory and compute
+submit or schedule batch jobs and aws batch will do the RESTful
+They are defines as docker images and run on ECS
+Helpful for cost optimization and less on infrastructure
+
+Batch vs Lambda
+
+Lambda:
+Time limit(10-15 mins)
+limited run time
+limited temporary disk space
+Serverless
+
+Batch:
+No time limit
+any runtime as long as it is packaged as a docker image
+Rely on EBS / instance store
+Relies on EC2 (Can be managed by AWS)

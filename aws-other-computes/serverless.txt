@@ -1,0 +1,7 @@
+Serverless:
+It is a new paradigm in which developers dont have to manage servers any more
+We just deploy code or function
+It is commonly mentioned as a Function as a Service(FaaS)
+It was pioneered by AWS Lambda but now includes anything thats managed databases, messaging and storage.
+It does not need manging or provsioning
+eg:S3,DynamoDB,Fargate,

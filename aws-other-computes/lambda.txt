@@ -1,0 +1,31 @@
+AWS Lambda:
+Virtual functions -> no servers to manage
+short executions
+Run On-demand
+Scaling is automated
+
+Benefits:
+Easy pricing -> pay per request and compute time
+Integrated with whole AWS suite of Services
+Event-Driven: Functions get invoked by AWS when needed
+Integrated with many languages
+Easy monitoring with cloudwatch
+EASY TO GET MORE RESOURCES PER Function
+increasing RAM will also improve CPU and network
+
+Langauge Supports
+Node.js (Javascript)
+Python
+Java
+C#
+Ruby
+Custom Runtime api (rust and golang)
+Lambda containe image
+
+Pricing:
+pay per calls:
+first 1,000,000 requests are free
+pay $0.20 per 1 million requests
+pay per duration: (in increment of 1ms)
+400,000 gB-seconds of compute time per month if free
+It is very cheap to run AWS Lambda
