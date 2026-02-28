@@ -1,0 +1,8 @@
+AWS Cloud Development Kit (CDK)
+Define your cloud infra using a familiar lang
+Code is compiled using Cloud formation templates
+The code can be deployed in an infratructure along with application runtime together
+-> Great for lambda functions
+-> Great for Docker containers in ECS / EKS
+
+CDK application -> CDK CLI -> Cloud formation template -> CloudFormation

@@ -1,0 +1,37 @@
+Typical architecture: Web App 3-tier
+user -> ELB -> Multiple ec2 instances -> database  -> in memory cache
+
+Developer Problems on AWS
+-> Managing infratstructure
+-> deploying code
+-> Configuring databases, Load balancers etc
+-> Scaling concerns
+-> Most apps have the same architecture (ALB + ASG)
+-> All the developers want is for their code to run
+-> Consistanly across different applications and environments
+
+AWS Elastic Beanstalk Overview
+It is a developer centric view of deploying an application on AWS
+It uses components such as EC2,ASG,ELB,RDS
+Full control over configuration
+It is platform as a Service (PaaS)
+
+We pay only for the the underlying instances
+It is managed Service
+-> instance configuration /os handled by Beanstalk
+->Deployment strategy is configurable but performed by Elastic Beanstalk
+->Capcity provisooning
+->Load balancing & autoscaling
+->Application health monitoring and responsivenenss
+
+user responsibility is application code
+Three arch models
+Single instance deployemnt: good for dev environment
+LB+ASG: great for production or pre-production web applications
+ASG Only : great for non web application
+
+It is supported for many platforms
+
+Health monitiring
+The health agent pushes metrics to cloudWatch
+Checks for app health, pushlishs health events

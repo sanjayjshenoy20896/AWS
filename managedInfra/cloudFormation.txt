@@ -1,0 +1,28 @@
+Deploying and Managing Infrastructure at scale section
+
+Cloud Formation:
+It is a decalrative way of your AWS infrastructure, for any resources (most of them are supported).
+
+Benefits:
+Infrastructure as a Code (IaaC)
+-> no manual creation of resources
+-> Changes to infratruture are reviewed through Code
+Cost
+Each resource within stack is tagged with an identifier so you can easily see how much a stack costs
+Estimate the cost by using the cloud formation templates
+Savings Strategy In Dev, automation deletion of templates at 5PM and recreation at 8AM
+Productivity
+Ability to destroy and re-create an infratructure on the cloud on the fully
+Automated generation of diagram for your templates
+Declarative programing
+
+Dont reinvent the wheel
+- leverage existing templates
+- leverage the documentation
+Supports all resources
+
+
+CloudFormation + Infrastructure Composer
+We can see all the resources
+We can see relations between components
+

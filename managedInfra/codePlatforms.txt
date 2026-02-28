@@ -1,0 +1,44 @@
+AWS CodeDeploy
+It is used to deploy application automatically
+Works with EC2 instances
+Works with onpremises servers
+Hybrid Service
+Servers / Instances must be provisioned and configured ahead of time with CodeDeploy agent
+
+AWS CodeCommit
+Before pushing the application code to servers, it needs to be stored somewhere
+Developers usually store code in a repositoryusing the git technology
+A famous public offering is 'GitHub,AWS' competing product
+
+Benefits:
+Fully managed
+Scalable and highly available
+Private,Secured,Integrated with AWS
+
+AWS CodeBuild:
+Code building service in the cloud
+Compiles source code, run tests and produces packages that are ready to be deployed
+CodeCommit -> CodeBuild > Ready to deploy Artifact
+
+Benefits:
+Fully managed,serverless
+Congtinously Scalable and highly available
+Secure
+Pay as you go -> only pay for build time
+
+CodePipeline
+Orchestrate the different steps to have code automatically pushed to production
+Code -> buid -> test -> provisioned -> Deploy
+Basis for CI/CD
+
+Code Commit -> CodeBuild -> CodeDeploy -> ElasticBeanstalk
+
+Benefits
+Fully Managed with most cervices or custom Plugins
+
+CodeArtifact:
+s/w packages depend on each other to be built and new ones are created
+Storing and retriving dependencies is called artifact mgmt
+It is a secure ,scalable and cost-effective managaemnt for siftware Development
+Woekes with common dependency managaemnt
+
