@@ -1,0 +1,19 @@
+Global Applications Architecture
+1.) Single Region, Single AZ
+no High availablity
+Global latency
+
+2.) Single Region , Multi AZ
+High availablity
+No global latency
+
+3.) Muti Region, Active - Passive
+read in one region
+read/write in on region
+benefits:
+Global read latency is good
+Global writes layency
+
+Multi Region , active - active
+Improved read and write latency
+read -write happends on both regions

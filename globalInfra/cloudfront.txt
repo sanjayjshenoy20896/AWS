@@ -1,0 +1,25 @@
+AWS CloudFront
+It is a Content Delivery NEtwrok
+it improved read performance, content is cached at the edge
+Improves user performance
+Hundred of points of presence globally
+DDOS protection , integration with shield, AWS WEB application FIREWALL
+
+Origins:
+S3 Bucket
+a.)for sutributing files and caching them at the edge
+b.)for uploading files to S3 through CloudFront
+c.) Decured though Origin Access countrol
+
+VPC Origin
+1.) Application hosted in VPC Private subnets
+2.) Private application Load balancer /Network load balancer / EC2 instances
+
+Custom Origin
+S3 Website
+Any public http backend (eg: Public ALB)
+
+CloudFront at a high level:
+
+client -> CloudFront edge location <-> S3 ORIGIN or http
+

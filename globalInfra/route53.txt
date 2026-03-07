@@ -1,0 +1,27 @@
+AWS Route 53:
+Mangaged Domain Name System
+
+Most common records are
+1.) using IPV4 address -> A records
+2.) using ipv6 address -> AAAA records
+3.) mapping a hostname to hostname -> CNAME
+4.) mapping a AWS Resource -> Alias records
+
+Routing policies:
+1.) Simple Routing Policy:
+There is no health checks
+
+2.) Weighted Routing Policy:
+It is a distributed routed policy across multiple instances of applications
+Weights are assigned to each instant as percentage
+
+3.) Latency routing policy:
+It is used when application is globally spread.
+In this case, request is routed to teh application closest to the application
+
+4.) Failover routing
+It is used for disaster recovery.
+Here we have 2 servers namely primary and Failover
+If the health check on primary fails, then the request goes to failover.
+
+This is due to elastic ip

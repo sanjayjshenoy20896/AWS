@@ -1,0 +1,24 @@
+AWS Outposts:
+They are server racks that offers he same AWS Infratsrucure , services,API's and tools to build your applications on-premises just in the cloud.
+AWS will setup and manage OUTPOSTS RACK with your on-premise infrastructure and you can use them on premise
+
+Benefits:
+Low l;atency access
+local data processing
+data residency
+Easeir migration from on premises to the cloud
+
+Services working on Outposts
+EC2,EBS,S3,EKS,ECS,RDS,EMR
+
+AWS Wavelength:
+They are infrastructure deployments embedded within telecom networks at edge centers of 5G networks
+eg: ec2,ebs,vpc
+Ultarlow latency for applications
+Highbandwith and secure connection to the aprent AWS region
+
+AWS local Zones:
+Places AWS compute storage,database and other services closer to end users to run latency sensitive applications
+Extension of an AWS region
+Caompatible with EC2,RDS,ECS,EBS,ElastiCache,Direct Connect
+ 

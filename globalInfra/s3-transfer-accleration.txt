@@ -1,0 +1,8 @@
+S3 Transfer ACCERLERTION
+Increase speed by transfeering file to an AWS edge location will forward the data to s3 bucket in target region.
+
+global ACCELERATOR:
+It improve global application availability and performance using AWS global Network
+Leveerage AWS internal network to optimisie route to your applciation. 
+60% improvement
+Edge locations send the traffic to your application

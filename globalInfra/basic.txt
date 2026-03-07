@@ -1,0 +1,17 @@
+Why make global application?
+It is an application deployed in multiple geographies
+It could be Regions/edge locations in AWS
+Decreased latency
+Disaster recovery plan
+Attack protection
+
+Global AWS Infrastructure:
+Regions: Deploying applications and infrastructure
+Availiability zones: Made of multiple data centers
+Edge locations: Points of presence as close as possible to users
+
+Global DNS: Route53
+Global Content -> Cloudfront
+S3 TRANSFER ACCERLERTION
+AWS GLOBAL ACCELERATOR
+
