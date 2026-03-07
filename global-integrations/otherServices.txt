@@ -1,0 +1,9 @@
+Amazon kinesis
+It is used for real time data streaming
+used to collect ,process and analyze real-time streaming data at any scale
+it has low latency streaming to ingest data at scale from hundredds of thousands of sources
+
+
+Amazon MQ:
+is a managed message broker service for RabbitMQ AND activeMQ
+It doesnt scale as much as SQS / SNS

@@ -1,0 +1,11 @@
+Amazon SQS -> Simple Queue Service
+Queue:
+Have multiple producers send messages to a queue and the sqs poll messages from the queue to the consumer.
+It is one of the most oldest Service
+Fully manages and decoupled applications
+autoscalling 
+default retention is from 4 to 14 days
+Consumers share the work and scale horizontally
+
+FIFO QUEUES:
+first in first out

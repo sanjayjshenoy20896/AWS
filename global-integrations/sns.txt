@@ -1,0 +1,7 @@
+Amazon SNS -> Simple notidfication
+It is a pub/sub type of integrations
+Event publishers only sends messages to one topic
+Each subscriber to topic will get all messages
+Upto 125000000 sub per topic, 
+100,000 topics limit
+

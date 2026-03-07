@@ -1,0 +1,7 @@
+Global Introduction:
+When we start deploying multiple applications
+They will need to communicate with one another
+There are 2 main patterns
+1.) Synchronous communications
+2.) Asynchronous communications
+
