@@ -1,0 +1,18 @@
+Virtual Private Cloud (VPC):
+VPC,Subnets,Internet Gateways & NAT Gateways
+Security Groups,Network ACL (NACL), VPC Flow logs
+VPC perring , VPC Endpoints
+Site to Site VPN & Direct Connect
+Transit Gateway
+
+ IP Addresses in AWS:
+ 
+IPv4  - Internet Protocol version 4 (4.3 Billion addresses)
+-> EC2 instance gets a new public ip address wvery time you stop and then start it.
+Private IPV4 -> can be used on private networks sunch as internal AWS networking 
+it is fixed for EC2 instances even if you start/stop them
+Elastic IP: allows you to attach a fixed IPv4 address to ec2 instance
+Every public ipv4 address will becharged for $0.005 per hour
+
+IPv6  - Internet Protocol version 6 (3.4 X 10^38 Addresses)
+every address is public in aws (no private range) 

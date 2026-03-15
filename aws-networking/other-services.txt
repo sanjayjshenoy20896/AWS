@@ -1,0 +1,25 @@
+Direct Connect
+Establish a physical connect between on premise and AWS
+it is fast seciure and fast
+private network
+Takes at leasT one month
+
+Site to Site VPN
+connect to on premise VPN TO AWS
+connection is automatically encrypted
+Goes over public internet
+connection between cooperate datacenter and VPCs
+-> On -premise : use customer GATEWAY (CGW)
+-> AWS: Virtual Private Gateway (VPG)
+
+Client VPN:
+connect the computer using OpenVPN to your private networkin aws and on premise
+allow you to connect to your EC2 instances over a private IP
+Goes over a public internet
+
+
+Transit Gateway:
+Having peering thousands of VPC and onpreise , hub and spoke connection
+One single gateway tp probide this functionality
+
+

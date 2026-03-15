@@ -1,0 +1,19 @@
+VPC & Subnets Primer:
+VPC ->Private cloud to deploy or resources (regional resources)
+Subnets -> Partition of network with your VPC (AVAILABLITY ZONE)
+Public subnet -> accessible from the Internet
+eg: EC2 instances or public resources
+Private Subnet -> That is not accessbibel form Internet
+eg: databases or private resources
+Route table -> access to internet and between subnets
+
+Internet Gateway & NAT Gateways:
+Internet Gateways 
+It helps VPC instances connect with the internet
+Public Subnets have a route to internet Gateway
+
+NAT Gateways (AWS-managed) & NAT Instances (self-managed)
+it allows instances in your private subnets to access internet while remaining private
+
+CIDR -> Classless Inter-Domain Routing
+https://cidr.xyz/

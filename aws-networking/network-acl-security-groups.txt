@@ -1,0 +1,29 @@
+Network ACL & Security groups:
+NACL -> Firewall which controls traffic from andd to subnet
+-> Can have allow and deny
+-> Are attched at subnet level
+-> Rules only include IP Addresses
+Security Groups:
+Firewall that controls traffic to and from an EC2 instance
+Can have only allow rules
+Rules include IP addresses and other security groups
+
+VPC Flow Logs:
+Capture information about IP traffic into ypur interfaces
+Helps to monitor & troubleshoot connectovity issues
+It can capture information from aws managed services
+VPC Flow lofs can go to s3,cloud watch logs and amazon data firehouse
+
+VPC Peering
+Connect two VPC privately using aws network
+Make thme behave as if they were in same network
+Must not have overlapping CIDR
+It is not transitive
+
+VPC Endpoints:
+allow you to connect to aws services using a private netwrok instead of public network
+alllowess enhanced security and low latency to access AWS services
+
+VPC Endpoint Services (AWS Private Link):
+Most secure and scalable to expose a service to 1000s of VPCs
+Does not require VPC Peering , Internet gateway and nat or route tables
