@@ -1,0 +1,39 @@
+X-ray:
+Debugging in production
+Visual analysis of our applications
+
+Advnatages:
+Trouble shooting performance
+Pinpoint dependencirs in microservices archive
+pinpoint servcie issues
+review reuqest behaviour
+find errors and exceptions
+Are we meeting SLA
+Where am i throttled
+identify users impacted
+
+Code Guru:
+It ML powered for automated code reviews and application performance recommednations
+Provides 2 funactionalities
+1.) CodeGuri reviewer
+2.) Code guru profilier
+Identify crtical issues , security vulnerabilities and hard-to-find bugs
+Uses amchine learcning and automatic reasoning
+Supports java and python
+integrates with github , gitBucket, and AWS CodeCommit
+
+
+Amazon Health dashboard -  Service history:
+Shows all region , all sservice Health
+Shows historical information
+Has an RSS FEED Subscription 
+Previously called AWS service health dashbaord.
+
+AWS health Dashbaord -> your account:
+Previously called AWS Personal dashbaord (PHD)
+It provides alerts and remediation guidance when aws is experianceing events that may impact you
+It gives you a persoanlized view into performance and availability of AWS services underlying your aws resources
+it displays relevant and timely information to help you managae events in progress and provides proactive notifications to help plan for scheduled activities
+It can aggregate data for an entire AWS Organisation
+Global service
+It shows how outages impact you and our resources.

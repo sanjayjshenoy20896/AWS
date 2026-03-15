@@ -1,0 +1,44 @@
+Cloud Watch metrics and cloud watch alarms:
+Metric is a variable to monitor
+Metrics have timestamps
+
+Importnat metrics:
+1.) EC2 Instances CPU UTILIZATION , status and network
+2.) EBS Volumes: Disk Read/Writes
+3.) S3 Buckets: Bucket Size bytes, number of objects,all requests
+4.) Billing: Estimated charge
+5.) Service limits: How much you have been using a service api
+6.) Custom Metrics: Push your own metrics
+
+Alarms:
+It is used to trigger notifications for any metrics
+
+Cloud watch logs:
+It is used to collect log form.
+Adjustable retention of logs
+
+eg: EC2
+no logs from ec2 instance will go to cloudwatch 
+create a cloud watch agent on ec2 TO PUSH THE logfiles you want.
+Iam permissions has to be correct.
+
+Amazon EventBridge: (Cloud watch events)
+1.) Schedule cron jobs
+2.) Event Pattern: Event rules to react to a service.
+
+Amazon services -> Default event bus ->  Zendesk/DATADOG -> Partner event bus -> Custom Apps -> Custom event bus
+Schema Registry: model event Schema
+we can archive events sent to a event bus
+ability to replay event bus
+
+CloudTrail:
+provides governance,compliance and audit for your aws account
+It is enabled by Default
+Get an history of events / api calls made within your aws account
+-> console
+-> SDK
+-> CLI
+-> AWS services
+The logs can ba pushed into cloudwatch logs or S3
+It can be applied to all regions or a single regions
+
