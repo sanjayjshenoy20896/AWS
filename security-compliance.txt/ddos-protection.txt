@@ -1,0 +1,41 @@
+DDos Attack:
+Distributed Denial of Service:
+
+attacker -> multiple servers -> multiple bots -> application server
+
+This will lead to server being inaccessible
+
+Protection:
+1.) AWS Shield Standard: 
+protects against DDOS attack for your website and applications for all customers at no additional costs
+2.) AWS Shield Advanced:
+24/7 premium DDoS Protection
+3.) WAF :
+Filter requests based on rules
+4.) CloudFront and Route53
+Availability protection using global edge network
+Combined with AWS Shield
+5.) Autoscaling
+
+AWS Shield:
+
+1.)Standard
+Free service for every customer
+Provides protection from attacks such as SYN/UDP Floods, Reflection attacks and other layer 2/layer4 attacks
+
+2.) Shield Advanced:
+Optional DDOS mitigation service ($3000 per month per org)
+Protect against more sophisticated attack on ec2,elb,cloudfront,global accelerator, Route53
+24/7 Access to AWS DDos response team (DRP)
+Protect against higher fees during usage spikes due to DDoS
+
+WAF -> Web Application firewall
+Protects your web application from common web exploits (Layer 7)
+layer 7 -> HTTP vs(layer 4 is TCP)
+Deploy on Application Load Balancer,API Gateway,CloudFront
+
+Define Web ACL (Web Access Control List)
+Rules can inlcude IP addresses, HTTP headers, HTTP body or uri strings
+Protects from common attack -> SQL injection and Cross-Site Scripting (XSS)
+Size constraints , geo match (block countries)
+Rate-based rules (to count occurrences of events) - for DDoS protection

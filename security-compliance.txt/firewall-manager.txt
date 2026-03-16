@@ -1,0 +1,9 @@
+AWS Firewall Manager:
+Manage security rules for all accounts of an organization
+Security Policy
+-> VPC SECURITY GROUPS for EC2, Application Load Balancer etc
+-> WAF Rules
+-> AWS Shield Advanced
+-> AWS network firewall
+
+Rules are applied to new resources as they are created accross all and future accounts in your org

@@ -1,0 +1,38 @@
+Security and Compliance
+
+Rewind on Shared Responsibility model:
+1.) AWS -> Security of the cloud
+Protecting infratructure that runs all the aws Services
+Managed services like S3, DynamoDB,RDS
+2.) Customer Responsibility - Security in the cloud
+For EC2 Instances, customer is Responsible for management of the guest OS, firewall & network configuration ,IAM
+Encrypting application data
+3.) Shared Controls
+Patch Management , configuration mgmt , awareness and training
+
+Example: RDS
+a.) AWS
+Manage underlying EC2 instance, disable SSH access
+Automated DB Patching
+Automated OS Patching
+Audit underlying intsance and disks & guarantee it functions
+
+b.) Customer Responsibility:
+Check the ports/IP/Security Group inbound rules in DB's SG
+in-database user creation and permissions
+Creating a database with or without public access
+Ensure parameter groups or DB is configured to only allow SSL connections
+database encryption setting
+
+S3:
+1.) AWS
+-> Unlimited storage
+-> Encryption is achieved
+-> Ensure separation od data between different customers
+-> Ensure AWS ppl cant access your data
+
+Customer:
+1.) Bucket configuration
+2.) Bucket policy
+3.) IAM Users and Roles
+4.) Enabling encryption
