@@ -1,0 +1,66 @@
+AWS Certificate Manager (ACM)
+Lets you easily provision ,.amanage and deploy SSL/TLS Certifcates
+Used to provide in-flight encryption for websites
+Supports both public and private TLS certificates
+Free of charge for public and private TLS certificates
+Automatic TLS certificate renewal
+Integrations with (loaded TLS certs own)
+
+Secrets Manager
+It is meant for storing Secrets
+Capability to force rotation of secrets every X days
+Automate generation of secrets on rotation (uses Lambda)
+Integration with Amazon RDS (MySQL,PostgreSQL,Aurora)
+they are encrypted using KMS
+mostly meant for RDS.
+
+AWS Artifact:
+It provides customers with on-demand access to AWS complaincem documentation and AWS Agreements
+Artifact Reports:
+It allows you to download AWS Security and complaince documents from third-party auditors like AWS ISO certiifcations,Payment Card Industry (PCI) and System and Organization Control (SOC) reports
+Artifact Agreements:
+it allows you to review ,accept and track the status of AWS agreements such as Business Associate Addhendum (BAA) or Health Insurance Portability and Accountability Act (HIPAA) for an individual account or in an organisation.
+
+They can be used to support internal audit or compliance.
+
+Amazon GuardDuty:
+Intelligent threat discovery to protect the AWS account.
+Uses ML alogorithms, anomaly detection, 3rd party data
+One click to enable (30 days trial), no need to install software.
+Input data includes
+-> CloudTrail event logs - unusual API calls, unauthorised deployments
+ a.) CloudTrail Management Events - create VPC,subnet, create trail
+ b.) CloudTrail S3 data events - get object, list objects ,delete objects
+-> VPC Flow Logs -unusual internal traffic, unuusal ip address
+-> DNS Logs - compromised EC2 instances sending encoded data with dns queries
+-> Optional  ->EKS Audit logs, RDS and Aurora,EBS,Lambda,S3 Data Events
+Can set up Event Bridge rule can target AWS Lambda or SNS
+can protect against CryptoCurrency attacks
+-> it has a dedicated finding for it.
+
+Inspector:
+Automated Security Assessments
+
+1.) EC2 instances 
+-> Leveraging AWS System Manager (SSM) agent
+-> Analyze against unintended network accessibility.
+-> Analyze running OS against known vulnerabilities
+
+2.) For Container images push to Amazon ECR
+-> Assessment of container images as they are pushed
+
+3.) Lambda functions
+-> identifies for software vulnerabilities in function code and package dependecies.
+-> Assessment of functions as they are deployed.
+
+Reporting and integration with AWS Security Hub.
+Send findings to Amazon Event Bridge
+
+What does it evaulate?
+Remember: only for EC2 instances,Container images & lambda functions
+Continous scanning of the infrastructure of infra, Only when needed
+Package vulnerabilities (EC2,ECR & Lambda) - database of CVE
+Network reachabilty (EC2)
+
+A risk score is Associated with all vulnerabilities
+

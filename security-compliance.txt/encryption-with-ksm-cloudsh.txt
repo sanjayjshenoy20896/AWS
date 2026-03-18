@@ -1,0 +1,48 @@
+Data at rest vs Data in transit
+
+at rest:data stored or archived on a disk
+-> On a hard disk, on a rds instance,in S3 Glacier Deep archive
+
+in transit -> data being moved from one location to another.
+->means data is transferred on the network
+
+We use encryption keys to encrypt the data
+
+AWS Key Management Service (AWS KMS)
+
+encryption in AWS = KMS
+
+Encryption Opt-in:
+-> EBS volumes: encrypt volumes
+-> S3 buckets: Server-side encryption of objects (SSE-S3 enabled by default, SSE-KMS opt in)
+-> Redshift database: encryption of data
+-> RDS database: encryption of data
+-> EFS drives: encryption of data
+
+Encryption Automatically enabled:
+-> CloudTrail Logs
+-> S3 Glacier
+-> Storage Gateway
+
+CloudHSM -> Hardware Security Module
+AWS Provisions encryption hardware
+encryption is managed by the customer
+The device is tamper resistant,FIPS | 40-2 Level 3 compliance
+
+Types of KMS key:
+1.) Customer Managed Key:
+Create,Manage and used by customer can enable or disable
+Possibility of rotation policy (new key generated every year, key preserved)
+Possibility to bring your own key
+
+2.) AWS Managed key:
+Created,Managed and used on the customer's behalf by AWS
+Used by AWS Services (aws/s3,aws/ebs,aws/redshift)
+
+3.) AWS Owned Key:
+Collection of CMKs that an aws service owns and manages to use in multiple accounts
+AWS can use those to protect resources in your account
+
+4.) CloudHSM Keys:
+The keys are generated from your own CloudHSM hardware device.
+Crytographic operations are performed  within the cloudHSM cluster
