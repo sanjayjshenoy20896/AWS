@@ -1,0 +1,11 @@
+IAM Access Analyzer
+-> Find out which resource are shared externally
+s3 buckets
+IAM Roles
+KMS keys
+Lambda functions and Layers
+SQS Queues
+Secret Manager Secrets
+
+Define ZoneOfTrust = AWS Account / AWS Organsation
+Access outside zone of trusts -> findings

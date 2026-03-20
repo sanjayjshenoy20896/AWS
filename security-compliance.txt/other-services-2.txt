@@ -1,0 +1,78 @@
+AWS Config
+It helps with auditing and recording compliance of your aws resources.
+Helps record configurations and changes over time
+Possibility of storing configuration data into S3 (analysed by Athena)
+
+Questions resolved by AWS Config
+-> is there unrestricted SSH access to my security groups?
+-> Do my buckets have any public access?
+-> How has my ALB configuration changed over time?
+
+You can receive alerts (SNS notifications) for any changes.
+It is a per-region service
+It is not a free service
+Can be aggregated across regions and accounts.
+
+AWS Config resource
+View complinace of a resource over time.
+View configuration of a resource over time.
+View CloudTrail API calls if enabled
+
+
+Amazon Macie:
+It is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS.
+It will help to identify and alert you to sensitive data such as Personal Identifiable Information (PII)
+eg:
+S3 buckets <-analyze-> Macie <-notify-> Amazon event bridge -> integrate to AWS services
+
+Security Hub:
+Central Security tool to manage security across several AWS accounts and automate security checks
+Integrated dashboard showing security and compliance status to take quick actions.
+Automatically aggregates alerts in predefined or personal findings from various AWS services aws partner tools
+-> Config
+-> Guard Duty
+-> Inspector
+-> Macie
+-> IAM Access Analyzer
+-> AWS Systems Manager
+-> AWS Firewall Manager
+-> AWS Health
+-> AWS Partner Network Solutions
+
+Must first enable AWS Config Service
+
+Amazon Detective:
+GuardDuty ,Macie and Security Hub are used to identify potential security issues or findings
+Sometimes security findings require deeper analysis to isolate root cause and take action.
+It analyzes,investigates and quickly identifies root cause of security issues or suspicious activities
+It Automatically collects and processes events from VPC Flow Logs,CloudTrail,GuardDuty and create a unified View
+Produces visualizations with details and context to get the root cause.
+
+
+AWS Abuse:
+Report suspected AWS resources used for abusive and illegal purposes
+abusive and prohibited behaviour
+-> spamming
+-> port scanning
+-> DoS/DDos attacks
+-> Intrusion attempts
+-> Hosting objectionable orcopyright content
+-> Distributed malware
+
+Root User Privilages:
+Root user = Account Owner
+Has complete access to all services and resources
+Lock away aws account root user access keys
+Do not use root account for everyday tasks
+
+Actions that can be performed only by root user
+-> Change account settings
+-> close account
+-> view tax invoices
+-> Restore IAM user permissions
+-> Change or cancel AWS Support plan
+-> Register a seller in the reserved intsance marketplace
+-> Configure an S3 Bucket to enable MFA
+-> edit or delete bucket policy that includes VPC ID or VPC endpoint
+-> Sign up for GovCloud
+
