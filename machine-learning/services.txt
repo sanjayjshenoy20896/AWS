@@ -1,0 +1,88 @@
+Amazon Rekognition:
+It is used to find objects ,text ,scenes in images and videos using ML
+Facial Analyisis and facial search to do user verification , people counting
+Create a database of familiar faces or compare gainst celebrities
+
+Use cases:
+Labeling
+Content Moderation
+Text Detection
+Face Detection and Analysis ( gender, age, range and emotions)
+Face Search and verification
+Celebrity recognition
+Pathing
+
+Transcribe:
+Automatically Convert speech to text
+Uses Deep learning called Automatic Speech recognition (ASR) to convert speech to etxt quickly and accurately
+It Automatically removes Personally Identifiable Information (PII) using redaction
+Automatic language Detection for multi lingual
+Use Cases:
+transcribe customer service calls
+automate closed captioning and subtitling
+generate metadata for media assets to create a fully searchable archive
+
+Polly:
+Turns text into lifelike speech using deep learning
+Allowing you to create applications that talk
+
+
+Translate:
+Natural and accurate language translation
+It allows you to localise content such as websites and applications
+This also allows for international users and to easily Translate large volume of text efficiently
+
+Amazon Lex & Connect:
+Amazon Lex
+Same technology that powers Alexa
+Automatic speech recognition
+It uses natural language processors to recognise the intent of text and callers
+Helps build chatbots, call center bots
+
+Amazon Connect
+Receive calls, create contact flows, cloud-based virtual contact center
+Can integrate with other crm systems
+No upfront paymnets, 80% cheaper than traditional contact center Solutions
+
+Comprehend:
+it is for natural Language processing
+Fully managed and serverless service
+Uses machine learning to find insights and relationships in text
+-> Language of text
+-> Extract key phrases, text, people,brands etc
+-> Understands whether text is positive or negative
+-> analyzes text using tokenization and parts of speech
+-> Automatically organises a collection of text files by topic
+Use cases:
+Analyze customer interaction and emails to find positive and negative exploits
+Create and groups articles by topics
+
+SageMaker AI:
+Fully Managed service for developers / data sceientists to build ML Models
+Typically difficuly to do all the processes in one place + provision
+
+
+Kendra:
+Fully managed docyument search service powered by Machine learning
+Extract answers from within a document.
+It builds knowledge index that is powered by ML.
+Natural language search capabilities
+Learn from user interactions/ feedback to pronote preferred results (Incremental Learning)
+Ability to manually fine-tune search results
+
+Personalize:
+Fully managed ML-service to build apps with real time personalised recommendations
+examples:
+Personalised product recommendations/ re-ranking , customised direct marketing
+integrates with existing websites, applications, SMS, Email marketing systems
+Implement in days, not months
+
+Textract:
+Automatically extract text , handwriting and data from any scanned documents using AL and ML.
+Extract data from forms and tables
+Read and processes any type of documents
+Use cases:
+Financial services (invoices and financial reports)
+Healthcase (medical records, insurance claims)
+Public sector (tax forms, ID documents , passports)
+

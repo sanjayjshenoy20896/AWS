@@ -1,0 +1,19 @@
+Summary:
+Rekognition: Face detection, labelling and recognition
+Transcribe: audio to text (ex: subtitles)
+Polly: text to audio
+Translate: translations
+Lex: build converational bots - chatbots
+Connect: cloud contact center
+Comprehand: natural lang processing
+SageMaker: machine learning for every developer and data sceientist
+Kendra: ML-powered document search engine
+Personalise: real time personalised recommendations
+Textract: detect text and data in documents
+
+
+Types of ML models:
+Supervised: labelled
+Unsupervised: no labels
+reinforcemnet: reward based
+
