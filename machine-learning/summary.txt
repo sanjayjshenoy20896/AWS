@@ -16,4 +16,3 @@ Types of ML models:
 Supervised: labelled
 Unsupervised: no labels
 reinforcemnet: reward based
-
