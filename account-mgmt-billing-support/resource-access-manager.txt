@@ -1,0 +1,11 @@
+AWS Resource Access Manager (AWS RAM)
+Share AWS resources that you own with other aws account
+Share with amy account or within your organisation
+Avoid resource duplication
+They include 
+Aurora,
+VPC Subnets, 
+Transit gateway, 
+route 53,
+EC2 Dedicated Hosts,
+License Manager Configurations

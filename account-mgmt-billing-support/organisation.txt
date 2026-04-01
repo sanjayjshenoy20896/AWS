@@ -1,0 +1,74 @@
+AWS Organisation
+-> Global service
+-> Allows to manage multiple aws accounts
+-> The main account is the master account
+Cost Benefits
+-> consolidated billing accross all accounts - single payments
+-> Pricing Benefits from aggregated usage (Volume discounts on EC2,S3)
+-> Pooling of reserved EC2 instances for optimal savings
+API is available to automate AWS account creation
+Restrict account privilages using Service Control Policies (SCP)
+
+Multi Account starategy
+->Multiple accounts can be created as follows:
+per department, 
+per cost center , 
+per dev/test/prod/
+-> This is done based on regulatory restrictions (Using SCP)
+-> better resource isolation (vpc)
+-> seperate per-account service limits
+-> isolated account fro logging
+
+Multi Account vs One Account Multi vpc
+Use tagging standards for billing purposes
+Enable CloudTrail on all accounts , send logs to central S3 account.
+send cloud watch logs to central account
+
+Organisational Units - OU Examples
+
+1.) Business units
+The master account splits into multiple OU based on the business unit.(eg: Sales, Finance,Operation)
+Each of these OU is connected to multiple account based on workspace
+
+2.) Environment Lifecycle
+The master account splits into 3 accounts based on development workspace.(eg: development,staging,production)
+Each of those OU is then split into multiple accounts based on the workspace
+
+3.) Project based
+The master account splist absed on project OU.
+Each of the OU then split into multiple account.
+
+Service Control Policies (SCP)
+Whitelist or blacklist IAM actions
+Applied at the OU or account level
+Does not apply to master account
+SCP is applied to all Users and Roles of the account, including ROOT.
+SCP does not affect service-linked Roles
+-> service linked roles enable other aws accounts to integrate with AWS orgs and can be restricted by SCP.
+SCP must have an explicit Allow (does not allow anything by default)
+Use cases:
+Restrict access to certain services (for example: cant use EMR)
+Enfore PCI compliance by explicitly disabling services
+
+There are 2 main strategy for Blacklist and Whitelist
+1.) Individually allow or deny resource in policy statement
+2.) In a single policy for allow, we can provide list of services
+
+for other strategies
+https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html
+
+
+Consolidated billing
+When consolidated billing is enabled, it provides with following usage
+-> Combined Usage - combine the usage across all AWS accounts in the aws organisation to share the volume pricing, Reserved instances and Savings Plans discounts
+-> One bill - get one bill for all AWS Accounts in the AWS Organisation
+
+Example:
+There are 2 AWS accounts in an organisation
+user A -> NO reserved instances
+user B -> 5 reserved instances
+
+account A has deployed 6 ec2 instances and account b has deployed 3 ec2 instances
+in above scenario, as the user b has 5 reserved instances in its store, it has deployed 3 instances, the remaining instances are shared with user A in 2 out of his instances
+
+The management account can turn off Reserved instances discount sharing for any account in AWS Org including itself (main account)

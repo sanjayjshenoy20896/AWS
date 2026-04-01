@@ -1,0 +1,9 @@
+AWS Control Tower:
+It is a wasy way to setup and govern a secure and compliant multi-account AWS environment based on best practises
+Benefits
+-> Automate environment setup
+-> Automate ongoing poilcy management using guardrails
+-> Detect policy violations and remediate them
+-> Monitor, compliance through an interactive dashboard
+It runs on top of AWS Organisations
+-> setup AWS organisations to organise accounts and implement SCP
