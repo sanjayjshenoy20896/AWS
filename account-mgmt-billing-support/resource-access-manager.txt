@@ -9,3 +9,4 @@ Transit gateway,
 route 53,
 EC2 Dedicated Hosts,
 License Manager Configurations
+

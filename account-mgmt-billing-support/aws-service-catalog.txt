@@ -1,0 +1,10 @@
+AWS Service Catalog
+The Users that are new to AWS have too manu options and may create stacks that are not compliant
+Some Users just want a quick self-service portal to launch a set of authorised products pre-defined by admins
+This includes virtual machines, databases and storage options
+
+Admin tasks
+CloudFormation Templates -> products (Portfolio) -> IAM permisions to Access
+
+User tasks
+Product list per user -> Provisoned products (properly configured and ready to use)
