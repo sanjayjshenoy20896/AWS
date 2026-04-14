@@ -1,0 +1,26 @@
+AWS Cost Anomaly Detection:
+Continours monitor your cost and usage using ML to detect unusal spends
+It learns your unique , historic spend patterns to detect one time cost spike and/or continous cost increases
+Monitor AWS Servcies m member accounts, cost allocation tags or cost categories
+Sends you anomaly detection report with root-cause analysis
+Get notified with individual alerts or daily/weekly summary (using SNS)
+
+Service Quotas:
+It will notify you when you are close to a service quota value treshold
+Create CloudWatch Alarms on the service Quotas console
+We can also request a quoto increase from AWS Service Quotas or shutdown resources before limit is reached
+
+Trusted Advisor:
+High level AWS account assessment
+Analyse your AWS accounts and provide recommendations on 6 categories
+-> cost optimization
+-> performance
+-> security
+-> Fault tolerance
+-> Service limits
+-> Operational Excellance
+
+Business and Enterprise support plan
+-> full set of checks
+-> Programmatic access using AWS support api
+

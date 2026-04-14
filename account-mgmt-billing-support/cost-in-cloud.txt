@@ -1,0 +1,66 @@
+AWS Pricing Calculator
+AWS Website link: https://calculator.aws/#/
+It helps in estimating cost for the solution architecture
+It will give us pricing plan per year as well as for different payment plan
+
+Billing Dashbaord, cost Allocation, Usage and Reports:
+a.) Billing Dashboard:
+This provides a comprehensive billing cost of current period and cost for the same period in the previous month as well as forcast estimate for month
+
+b.) Cost Allocation tags
+It is used to track AWS cots on a detailed level
+Different tags
+-> AWS generated tags
+Automatically applied by aws on create
+-> User created tags
+defined by user
+starts with prefix user
+
+c.) Tagging and resource groups:
+They are used for organizing resources
+EC2: instances,images, load balancers, security groups Elastic
+RDS, VPC  resources,Route 53,IAM, users etc.
+Resources cretaed by cloud formation are all tagged in the same way.
+They can be used to create resource groups
+-> Create , Maintain and view a collection of resources that share common tags
+-> Manage these tags using tag editor
+
+Cost and Usage Reports
+It contains the moost comprehensive set of AWS cost and usage data available including metadata about services, pricing and reservations 
+eg: Amazon EC2 Reserved instances
+Lists AWS usage for each service category by an acocunt and its IAM users on a hourly or dailu items as tems that have been activated for cost allocation purposes
+Can be integrated with Athena , Redshift or QuickSight
+
+Cost Explorer:
+It is used to visualise , understand and manage your AWS cost and usage over a period of time
+Create custom reports that analyse cost and usage data
+analyze your data at a high level: total costs and usage across all accounts
+On monthly,hourly or resource level
+Choose an optimal Savings plan
+forcast usage upto 12 months based on previous usage
+
+Billing alarms and AWS budgets
+Billing data metric is stored in CloudWatch us-east-1
+Billing data are for overall worldwide AWS costs
+It is for actual costs and not for projected costs
+It is not as powerfull as AWS budgets
+
+AWS budgets
+Create budgets and send alarms when costs exceeds budgets
+It has 4 types of budgets
+a.) Usage
+b.) Cost
+c.) reservations
+d.) Savings plan
+For reserved instances
+-> track utilization
+-> Supports EC2, ElastiCache,RDS, Redshift
+Upto 5 SNS notifications per budget
+It can be filtered by following
+-> Service
+-> Linked Account tag
+-> Tag Purchase optional
+-> Instance type
+-> Region
+-> AZ
+-> API operation 

@@ -1,0 +1,83 @@
+Support Plans:
+Basic Support:Free
+
+a.) Developer
+Greater of $29.00
+or 
+3% OF monthly AWS charges
+
+b.) Business
+Greater of $100.00
+or 
+10% of monthly AWS charges for the first 0-$10k
+7% of monthly from 1ok -80k
+5% of monthly from 80k to 250k
+35 if monthly over 250k
+
+c.) Enterprise on-Ramp
+Greater than $5500
+or 
+10% of monthly AWS charges
+
+d.) Enterprise
+Greater of 15,000
+or
+10% or monthly for the first 0-150k
+7% of monthly for 150-550k
+5% of monthly AWS charges from $500k-1M
+3% if monthly AWS charges over $1M
+
+
+a.) Basic:
+-> Customer Service and Communities
+-> 24X7 access to customer service, documentation, whitepapers and support forums
+->Trusted advisor -> access to 7 core checks and guidance to provison the service following best practices
+-> AWS Personal Health Dashboard 
+persoanlised view of health of aws services and alerts when your resources are impacted.
+
+b.) Developer:
+all basic support plan + 
+Business hours email access to cloud support associates
+unlimieted cases /contacts
+Response times based on Case severity
+General guidance < 24 hours
+System impaired < 12 hours
+
+c.) Business plan
+Intended to eb used if you ahve production workloads
+Truested Advisor - Full set of checks  + API acccess
+24X7 phone,email and chat access to cloud support engineers
+Unlimited cases /  Unlimited contacts
+Access to infratstucture Event Management for additional fee
+Resposne time based on case severity
+General guidance < 24 hours
+System impaired < 12 hours
+Production system impaired < 4hours
+Production system dowm < 1 hour
+
+Enterprise On-Ramp Support plan (24x7)
+-> intended to be used if you have production or business critical workloads
+-> All of business support plan +
+-> Access to a pool of Technical Account Managers (TAM)
+-> Conceierge support plan (billing and account best practises)
+-> Infrastructure Event management, Well-Architectured & Operations Reviews
+Resposne time based on case severity
+General guidance < 24 hours
+System impaired < 12 hours
+Production system impaired < 4hours
+Production system dowm < 1 hour
+Business critical system down < 30 Mins
+
+Enterprise Support plan:
+Intended to be used if you have mission critical workloads
+All of Business Support plan
+Access to a designated Technical Account Manager (TAM)
+> Conceierge support plan (billing and account best practises)
+-> Infrastructure Event management, Well-Architectured & Operations Reviews
+Acccess to AWS incident: Detection and Response (Additional fee)
+Resposne time based on case severity
+General guidance < 24 hours
+System impaired < 12 hours
+Production system impaired < 4hours
+Production system dowm < 1 hour
+Business critical system down < 15 Mins
