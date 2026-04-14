@@ -41,3 +41,7 @@ EC2 Windows instances
 built in identity store in identit Center
 3rd party AD , OneLogin,Okta
 
+Login flow:
+1.) Login with AWS credentials
+2.) Post successful login, gives access ro AWS IAM Identity Center
+3.) 
