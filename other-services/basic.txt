@@ -1,0 +1,83 @@
+Workspaces:
+Managed Deskop as a Service used to easily provision Windows or linux desktop
+Great to elimiate mgmt of on premise VDI
+Fast and quickly scalable to thousands of Users
+Secured data -> Integrate with thousands of Users
+Pay as you go with monthly and hourly rates
+
+Workspaces Multiple regions:
+Deploy workspaces close to the user locations entity
+
+AppStream 2.0
+Deskop application streaming service
+Deliver to any computer w/0 acquring provision infra
+It is deliverd on a web browser
+
+AWS Iot 
+Newtork on internet connected devices
+It allows you easily connect Iot devices to the AWS CloudFormation
+Serverless, secure and scalable to billions
+It can be communicated with devices that arent connected with your devices even they are arent connected
+Integrates with a lot of AWS services
+
+
+AppSync:
+Store and sync data across mobile and web inreal time
+Makes use of GraphQl
+Client code can be generated automatically
+Integrations with Dynamo dB / Lambda
+Real time subscriptions
+Offline data sync (Replaces Cognito sync)
+Fine Grained security
+AWS Amplify can leverage AppSync in the background
+
+AWS Amplify:
+Set of tools and services that helps you develop and deploy scalable full stack web and mobile applications
+Authentications, Storage , API (Rest and GraphQL),CI/CD,PubSub,Analytics,AI/ML predictions, src code from AWS, github
+Elastic beanstalk of web applications
+
+AWS Infrastruture Composer:
+Visually design and build serverless applications quicky on AWS
+deploy AWS infratsructure code w/o needing to be an expert in AWS
+Configure how resources interact with each other
+Generate IaC using cloud CloudFormation
+Ability to import existing cloudFormation / SAM templates to visalize them
+
+AWS Device farm
+Fully-managed service that tests your web and mobile apps against browsers, real mobile devices and tablets
+Run tests concurrently on multiple devices
+Confugure device settings
+
+AWS Backups
+Fully managed service to managed centralised backups 
+On-demand and scheduled backups
+Supports PITR
+Retention periods, Lifecycle Management, Backup Policies
+Cross-Region Backup
+
+Disaster recovery strategy:
+1.) Backup and restore
+It is a low cost option using S3
+2.) Pilot Light
+It uses EC2 for the core functionaliy of app, ready to scale but minimal setup
+The corporate data center woudl then connect to the EC2 serves
+3.) Warm StandBy
+It uses EC2 at full version of the app but at minimum size
+The corporate data center woudl then connect to the EC2 serves
+Medium cost base
+4.) Multi-Site / Hot-Site
+It uses EC2 at full version of app at full size
+It has the highest size
+
+AWS Elastic Disaster recover (DRS)
+used to be named as CloudEndure Disaster recovery
+Used to quickly recover physical, virtual and cloud based servers into AWS
+Protect your most critical databases and apps to protect data from ransomwares
+Continous block-level replication for your servers
+
+AWS DataSync
+Move large amount of data from on-premises to AWS
+Can sync to S3, EFS ,Amazon FSx
+they can be scheduled hourly, daily and weekly
+replication tasks are incremental after the first load
+
